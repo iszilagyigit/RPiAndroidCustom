@@ -8,10 +8,25 @@ Based on RTAndroid from https://rtandroid.embedded.rwth-aachen.de/
 
 - Raspberry PI3 
 - 7" Official touch screen
+- Ublox NEO 6M-GPS Modul GY-GPS6MV2 UART
+
+
+---
+Device info (from Device Info HW app)
+
+- Android 7.1.1 Nougat API 25, Java VM ART 2.1.0
+- Linux: 4.4.47 gcc 4.9 20150123, armeabi-v7a
+- Input: FT5406 memory base diver, sysfs: /Devices/virtual/input/input0, handlers:mouse0, event0
+- BCM2709 ARM7 (Cortex-A53) 1.2GHZ 1GB RAM, 
+- Instruction set: 
+half, thumb, fastmult, vfp, edsp, neon, vfpv3,
+tls, vfpv4, idiva, idivt, vdpd32 lpae evtstrm, crc32
+---
+
 
 ## Directory content
 
-- sdcard (contains - partially files from the PI's sdcard having android installed) 
+- sdcard (contains -  files from the PI's sdcard having RTAndroid installed) 
 
 ## (re)Installation.
 
@@ -84,4 +99,15 @@ ro.kernel.android.gps=ttyS0
 ro.kernel.android.gps.speed=9600
 ro.kernel.android.gps.max_rate=1
 ```
+#### Root Partition (/)
 
+The *init.rc* file.
+
+The init (/init) is the fist process that starts. It looks for the init.rc file parse and execute it. 
+The original init can be found in
+[androidsource]/system/core/init and the init.rc in  [androidsource]/system/core/rootdir/init.rc
+
+For Zygote initialization see:
+[androidsource]/frameworks/base/
+[androidsource]/frameworks/base/core/java/com/android/internal/os/ZygoteInit.java
+see also android.R

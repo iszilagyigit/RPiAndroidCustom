@@ -1,0 +1,14 @@
+import init.superuser.rc
+
+on boot
+    chmod 0444 /proc/cmdline
+    start sysinit
+
+on property:sys.boot_completed=1
+    start sysinit
+
+service sysinit /system/bin/sysinit
+    user root
+    group root
+    oneshot
+    disabled
