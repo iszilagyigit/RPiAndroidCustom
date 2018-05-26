@@ -1,0 +1,20 @@
+hdmi_force_hotplug=1
+hdmi_drive=2
+hdmi_group=2
+hdmi_mode=87
+hdmi_cvt=800 480 60 6 0 0 0
+kernel=zImage
+device_tree=bcm2710-rpi-3-b.dtb
+dtparam=audio=on
+dtparam=i2c1=on
+dtparam=i2c_arm=on
+dtoverlay=vc4-kms-v3d,cma-256
+dtoverlay=i2c-rtc,ds3231
+dtoverlay=rpi-backlight
+dtoverlay=rpi-ft5406
+initramfs ramdisk.img 0x01f00000
+mask_gpu_interrupt0=0x400
+avoid_warnings=2
+gpu_mem=256
+enable_uart=1
+lcd_rotate=2
