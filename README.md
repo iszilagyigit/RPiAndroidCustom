@@ -50,7 +50,7 @@ Note: Disable playstore autoupdate.
 /cache
 /userdata
 
-#### Boot Partition
+#### Boot Partition (/boot)
 
 **config.txt** (parts)
 
@@ -73,5 +73,15 @@ initrd=0x01f00000 dwc_otg.lpm_enable=0 no_console_suspend root=/dev/ram0 acpi_ir
 
 Note: for GPS removed the option __console=serial0,115200__
 
-#### System Partition
+#### System Partition (/system)
+
+**build.prop**
+
+changes for GPS
+
+```
+ro.kernel.android.gps=ttyS0
+ro.kernel.android.gps.speed=9600
+ro.kernel.android.gps.max_rate=1
+```
 
