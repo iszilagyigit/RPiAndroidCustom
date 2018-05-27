@@ -103,6 +103,30 @@ ro.kernel.android.gps=ttyS0
 ro.kernel.android.gps.speed=9600
 ro.kernel.android.gps.max_rate=1
 ```
+
+/system/lib/hw/gps.default.so (size 20412 md5: )
+source: https://github.com/iszilagyigit/android-serial-gps-driver
+
+used libraries:
+```
+ ~/work/arm7-andoid-toolchain/bin/arm-linux-androideabi-readelf -d gps.default.so | grep NEEDED  
+ 0x00000001 (NEEDED)                     Shared library: [liblog.so]
+ 0x00000001 (NEEDED)                     Shared library: [libm.so]
+ 0x00000001 (NEEDED)                     Shared library: [libdl.so]
+ 0x00000001 (NEEDED)                     Shared library: [libc.so]
+```
+
+ 
+Toubleshooting:
+- view serial (when gps connected) `cat /dev/ttyS0`
+```
+$GPGGA,191250.00,4930.68208,N,01058.85689,E,1,05,1.62,352.6,M,47.1,M,,*5E
+$GPGSA,A,3,11,27,10,14,01,,,,,,,,8.48,1.62,8.32*0A
+$GPGSV,3,1,12,01,40,283,26,03,11,226,,08,70,201,12,10,37,056,23*7D
+$GPGSV,3,2,12,11,51,291,23,14,29,133,23,18,66,291,,22,36,225,18*70
+```
+
+
 #### Root Partition (/)
 
 The *init.rc* file.
@@ -115,3 +139,13 @@ For Zygote initialization see:
 [androidsource]/frameworks/base/
 [androidsource]/frameworks/base/core/java/com/android/internal/os/ZygoteInit.java
 see also android.R
+
+
+#### Usefull apps
+
+- *stericson.busybox* (linux commands) 
+ some of them already in RTAndroid some might be missing.
+to list all busybox commands: `/system/xbin/busybox --help `
+
+- *com.chartcross.gpstest* android app in apk
+
