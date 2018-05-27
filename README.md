@@ -2,7 +2,9 @@
 Android configuration/setup on RPI3 
 
 Based on RTAndroid from https://rtandroid.embedded.rwth-aachen.de/
-
+Note: RTAndroid not available any more for download.
+Replacement EMTERIA https://emteria.com/ after installation (5min) 
+makes a clean and good first impression!
 
 ## Hardware
 
@@ -28,7 +30,7 @@ tls, vfpv4, idiva, idivt, vdpd32 lpae evtstrm, crc32
 
 - sdcard (contains -  files from the PI's sdcard having RTAndroid installed) 
 
-## (re)Installation.
+## (re)Installation. (RTAndroid)
 
 Configure the install.sh and execute:
 ``` bash
@@ -36,13 +38,15 @@ sudo ./install.sh /dev/mmcblk0
 ```
 
 The script will partition the sdcard format the partitions and 
-copy the files from:
-(TODO)
+copy the files from: and7rpi2016....img
+
 Notes:
 - by the first boot the mouse and the keyboard should be
 plugged out in thr RPI.
 
-### Installation of gplay
+
+
+### Installation of gplay (only for RTAndroid)
 
 - install in linux if not yet installed
 ```
