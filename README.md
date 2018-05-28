@@ -149,3 +149,11 @@ to list all busybox commands: `/system/xbin/busybox --help `
 
 - *com.chartcross.gpstest* android app in apk
 
+#### wiringPi (directory)
+
+origin from http://wiringpi.com/ compilation for android (not full compilation!)
+
+files (binary)
+/system/lib/libwiringPi.so
+/system/xbin/gpio
+
