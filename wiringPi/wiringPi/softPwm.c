@@ -158,19 +158,3 @@ int softPwmCreate (int pin, int initialValue, int pwmRange)
 }
 
 
-/*
- * softPwmStop:
- *	Stop an existing softPWM thread
- *********************************************************************************
- */
-
-void softPwmStop (int pin)
-{
-  if (range [pin] != 0)
-  {
-    pthread_cancel (threads [pin]) ;
-    pthread_join   (threads [pin], NULL) ;
-    range [pin] = 0 ;
-    digitalWrite (pin, LOW) ;
-  }
-}

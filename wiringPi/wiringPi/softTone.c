@@ -132,19 +132,3 @@ int softToneCreate (int pin)
 }
 
 
-/*
- * softToneStop:
- *	Stop an existing softTone thread
- *********************************************************************************
- */
-
-void softToneStop (int pin)
-{
-  if (threads [pin] != 0)
-  {
-    pthread_cancel (threads [pin]) ;
-    pthread_join   (threads [pin], NULL) ;
-    threads [pin] = 0 ;
-    digitalWrite (pin, LOW) ;
-  }
-}

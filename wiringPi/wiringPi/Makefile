@@ -36,12 +36,12 @@ DYNAMIC=libwiringPi.so.$(VERSION)
 
 #DEBUG	= -g -O0
 DEBUG	= -O2
-CC	= gcc
+CC	= ~/work/arm7-andoid-toolchain/bin/arm-linux-androideabi-gcc
 INCLUDE	= -I.
 DEFS	= -D_GNU_SOURCE
 CFLAGS	= $(DEBUG) $(DEFS) -Wformat=2 -Wall -Wextra -Winline $(INCLUDE) -pipe -fPIC
 
-LIBS    = -lm -lpthread -lrt
+LIBS    = -lm 
 
 ###############################################################################
 
@@ -59,7 +59,6 @@ SRC	=	wiringPi.c						\
 		sn3218.c						\
 		bmp180.c htu21d.c ds18b20.c				\
 		drcSerial.c						\
-		pseudoPins.c						\
 		wpiExtensions.c
 
 HEADERS =	$(shell ls *.h)

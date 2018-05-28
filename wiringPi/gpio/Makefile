@@ -32,12 +32,12 @@ endif
 
 #DEBUG	= -g -O0
 DEBUG	= -O2
-CC	= gcc
-INCLUDE	= -I$(DESTDIR)$(PREFIX)/include
+CC = ~/work/arm7-andoid-toolchain/bin/arm-linux-androideabi-gcc
+INCLUDE	= -I../wiringPi -I../devLib
 CFLAGS	= $(DEBUG) -Wall -Wextra $(INCLUDE) -Winline -pipe
 
-LDFLAGS	= -L$(DESTDIR)$(PREFIX)/lib
-LIBS    = -lwiringPi -lwiringPiDev -lpthread -lrt -lm
+LDFLAGS	= -L../wiringPi -pie
+LIBS    = -lwiringPi -lm
 
 # May not need to  alter anything below this line
 ###############################################################################

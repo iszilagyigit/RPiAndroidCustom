@@ -38,7 +38,7 @@ static int myAnalogRead (struct wiringPiNodeStruct *node, int pin)
 
   wiringPiSPIDataRW (node->fd, (unsigned char *)&spiData, 4) ;
 
-  spiData = __bswap_32(spiData) ;
+  spiData = bswap_32(spiData) ;
 
   switch (chan)
   {

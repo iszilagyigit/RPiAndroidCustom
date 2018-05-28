@@ -137,7 +137,8 @@ static volatile unsigned int GPIO_BASE ;
 static volatile unsigned int GPIO_TIMER ;
 static volatile unsigned int GPIO_PWM ;
 
-#define	PAGE_SIZE		(4*1024)
+// already defined in sysroot/usr/include/poll.h:34
+// #define	PAGE_SIZE		(4*1024)
 #define	BLOCK_SIZE		(4*1024)
 
 // PWM
@@ -1364,9 +1365,6 @@ void pinMode (int pin, int mode)
       pin = physToGpio [pin] ;
     else if (wiringPiMode != WPI_MODE_GPIO)
       return ;
-
-    softPwmStop  (origPin) ;
-    softToneStop (origPin) ;
 
     fSel    = gpioToGPFSEL [pin] ;
     shift   = gpioToShift  [pin] ;

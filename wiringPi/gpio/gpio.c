@@ -37,9 +37,6 @@
 #include <wiringPi.h>
 #include <wpiExtensions.h>
 
-#include <gertboard.h>
-#include <piFace.h>
-
 #include "version.h"
 
 extern int wiringPiDebug ;
@@ -887,11 +884,6 @@ static void doGbw (int argc, char *argv [])
     exit (1) ;
   }
 
-  if (gertboardAnalogSetup (64) < 0)
-  {
-    fprintf (stderr, "Unable to initialise the Gertboard SPI interface: %s\n", strerror (errno)) ;
-    exit (1) ;
-  }
 
   analogWrite (64 + channel, value) ;
 }
@@ -922,11 +914,6 @@ static void doGbr (int argc, char *argv [])
     exit (1) ;
   }
 
-  if (gertboardAnalogSetup (64) < 0)
-  {
-    fprintf (stderr, "Unable to initialise the Gertboard SPI interface: %s\n", strerror (errno)) ;
-    exit (1) ;
-  }
 
   printf ("%d\n", analogRead (64 + channel)) ;
 }
@@ -1424,18 +1411,6 @@ int main (int argc, char *argv [])
       argv [i - 1] = argv [i] ;
     --argc ;
     wpMode = WPI_MODE_PHYS ;
-  }
-
-// Check for -p argument for PiFace
-
-  else if (strcasecmp (argv [1], "-p") == 0)
-  {
-    piFaceSetup (200) ;
-
-    for (i = 2 ; i < argc ; ++i)
-      argv [i - 1] = argv [i] ;
-    --argc ;
-    wpMode = WPI_MODE_PIFACE ;
   }
 
 // Default to wiringPi mode
