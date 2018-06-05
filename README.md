@@ -4,7 +4,7 @@ Android configuration/setup on RPI3
 Based on RTAndroid from https://rtandroid.embedded.rwth-aachen.de/
 Note: RTAndroid not available any more for download.
 Replacement EMTERIA https://emteria.com/ after installation (5min) 
-makes a clean and good first impression!
+makes a clean and good first impressiexion!
 
 ## Hardware
 
