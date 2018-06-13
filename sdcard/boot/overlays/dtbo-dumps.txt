@@ -1,0 +1,94 @@
+// ***********************
+// fdtdump spi0-cs.dtbo
+// ***********************
+
+/dts-v1/;
+// magic:		0xd00dfeed
+// totalsize:		0x397 (919)
+// off_dt_struct:	0x38
+// off_dt_strings:	0x330
+// off_mem_rsvmap:	0x28
+// version:		17
+// last_comp_version:	16
+// boot_cpuid_phys:	0x0
+// size_dt_strings:	0x67
+// size_dt_struct:	0x2f8
+
+/ {
+    compatible = "brcm,bcm2835", "brcm,bcm2708", "brcm,bcm2709";
+    fragment@0 {
+        target = <0xdeadbeef>;
+        __overlay__ {
+            brcm,pins = <0x00000008 0x00000007>;
+            phandle = <0x00000001>;
+        };
+    };
+    fragment@1 {
+        target = <0xdeadbeef>;
+        __overlay__ {
+            cs-gpios = <0xdeadbeef 0x00000008 0x00000001 0xdeadbeef 0x00000007 0x00000001>;
+            status = "okay";
+            phandle = <0x00000002>;
+        };
+    };
+    __overrides__ {
+        cs0_pin = [00 00 00 01 62 72 63 6d 2c 70 69 6e 73 3a 30 00 00 00 00 02 63 73 2d 67 70 69 6f 73 3a 34 00];
+        cs1_pin = <0x00000001 0x6272636d 0x2c70696e 0x733a3400 0x00000002 0x63732d67 0x70696f73 0x3a313600>;
+    };
+    __symbols__ {
+        frag0 = "/fragment@0/__overlay__";
+        frag1 = "/fragment@1/__overlay__";
+    };
+    __local_fixups__ {
+        __overrides__ {
+            cs0_pin = <0x00000000 0x00000010>;
+            cs1_pin = <0x00000000 0x00000010>;
+        };
+    };
+    __fixups__ {
+        spi0_cs_pins = "/fragment@0:target:0";
+        spi0 = "/fragment@1:target:0";
+        gpio = "/fragment@1/__overlay__:cs-gpios:0", "/fragment@1/__overlay__:cs-gpios:12";
+    };
+};
+
+// ***********************
+// fdtdump spi0-hw-cs.dtbo
+// ***********************
+
+/dts-v1/;
+// magic:		0xd00dfeed
+// totalsize:		0x1ec (492)
+// off_dt_struct:	0x38
+// off_dt_strings:	0x1a0
+// off_mem_rsvmap:	0x28
+// version:		17
+// last_comp_version:	16
+// boot_cpuid_phys:	0x0
+// size_dt_strings:	0x4c
+// size_dt_struct:	0x168
+
+/ {
+    compatible = "brcm,bcm2835", "brcm,bcm2836", "brcm,bcm2708", "brcm,bcm2709";
+    fragment@0 {
+        target = <0xdeadbeef>;
+        __overlay__ {
+            cs-gpios = <0x00000000 0x00000000>;
+            status = "okay";
+        };
+    };
+    fragment@1 {
+        target = <0xdeadbeef>;
+        __overlay__ {
+            brcm,pins = <0x00000008 0x00000007>;
+            brcm,function = <0x00000004>;
+        };
+    };
+    __fixups__ {
+        spi0 = "/fragment@0:target:0";
+        spi0_cs_pins = "/fragment@1:target:0";
+    };
+};
+
+
+
