@@ -90,5 +90,96 @@
     };
 };
 
+// ***********************
+// fdtdump spi-gpio35-39.dtbo
+// ***********************
+
+/dts-v1/;
+// magic:		0xd00dfeed
+// totalsize:		0x29a (666)
+// off_dt_struct:	0x38
+// off_dt_strings:	0x254
+// off_mem_rsvmap:	0x28
+// version:		17
+// last_comp_version:	16
+// boot_cpuid_phys:	0x0
+// size_dt_strings:	0x46
+// size_dt_struct:	0x21c
+
+/ {
+    compatible = "brcm,bcm2835", "brcm,bcm2836", "brcm,bcm2708", "brcm,bcm2709";
+    fragment@0 {
+        target = <0xdeadbeef>;
+        __overlay__ {
+            cs-gpios = <0xdeadbeef 0x00000024 0x00000001 0xdeadbeef 0x00000023 0x00000001>;
+        };
+    };
+    fragment@1 {
+        target = <0xdeadbeef>;
+        __overlay__ {
+            brcm,pins = <0x00000024 0x00000023>;
+        };
+    };
+    fragment@2 {
+        target = <0xdeadbeef>;
+        __overlay__ {
+            brcm,pins = <0x00000025 0x00000026 0x00000027>;
+        };
+    };
+    __fixups__ {
+        spi0 = "/fragment@0:target:0";
+        gpio = "/fragment@0/__overlay__:cs-gpios:0", "/fragment@0/__overlay__:cs-gpios:12";
+        spi0_cs_pins = "/fragment@1:target:0";
+        spi0_pins = "/fragment@2:target:0";
+    };
+};
+
+// ***********************
+// fdtdump spi-rtc.dtbo
+// ***********************
+/dts-v1/;
+// magic:		0xd00dfeed
+// totalsize:		0x27b (635)
+// off_dt_struct:	0x38
+// off_dt_strings:	0x210
+// off_mem_rsvmap:	0x28
+// version:		17
+// last_comp_version:	16
+// boot_cpuid_phys:	0x0
+// size_dt_strings:	0x6b
+// size_dt_struct:	0x1d8
+
+/ {
+    compatible = "brcm,bcm2708";
+    fragment@0 {
+        target = <0xdeadbeef>;
+        __dormant__ {
+            status = "disabled";
+        };
+    };
+    fragment@1 {
+        target = <0xdeadbeef>;
+        __dormant__ {
+            #address-cells = <0x00000001>;
+            #size-cells = <0x00000000>;
+            status = "okay";
+            rtc-pcf2123@0 {
+                compatible = "nxp,rtc-pcf2123";
+                spi-max-frequency = <0x004c4b40>;
+                spi-cs-high = <0x00000001>;
+                reg = <0x00000000>;
+            };
+        };
+    };
+    __overrides__ {
+        pcf2123 = [00 00 00 00 3d 30 3d 31 00];
+    };
+    __fixups__ {
+        spidev0 = "/fragment@0:target:0";
+        spi0 = "/fragment@1:target:0";
+    };
+};
+
+
 
 
