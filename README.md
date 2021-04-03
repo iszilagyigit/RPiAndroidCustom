@@ -4,7 +4,7 @@ Android configuration/setup on RPI3
 Based on RTAndroid from https://rtandroid.embedded.rwth-aachen.de/
 Note: RTAndroid not available any more for download.
 Replacement EMTERIA https://emteria.com/ after installation (5min) 
-makes a clean and good first impressiexion!
+makes a clean and good first impresion!
 
 ## Hardware
 
@@ -79,6 +79,7 @@ hdmi_mode=87
 hdmi_cvt=800 480 60 6 0 0 0
 ...
 dtoverlay=rpi-ft5406
+dtoverlay=spi=on
 ...
 gpu_mem=256
 enable_uart=1
