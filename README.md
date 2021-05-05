@@ -62,6 +62,10 @@ adb connect 192.168.2.110 (example)
 Note: Disable playstore autoupdate. 
 (Start playstore, menu icon, settings/auto update)
 
+### Packagelisting
+
+[packagelist.txt](packagelist.txt)
+
 ### Partitions
 
 /boot
