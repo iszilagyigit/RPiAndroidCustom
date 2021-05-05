@@ -64,7 +64,7 @@ Note: Disable playstore autoupdate.
 
 ### Packagelisting
 
-[packagelist.txt](packagelist.txt)
+[packageslist.txt](packageslist.txt)
 
 ### Partitions
 
