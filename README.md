@@ -145,6 +145,27 @@ For Zygote initialization see:
 [androidsource]/frameworks/base/core/java/com/android/internal/os/ZygoteInit.java
 see also android.R
 
+#### FTDI support?!
+
+Linux kernel driver in:
+```
+rpi3:/ # ls -al /system/lib/modules/*ftdi*.ko
+-rw-r--r-- 1 root root  39088 2017-02-11 06:35 /system/lib/modules/ftdi-elan.ko
+-rw-r--r-- 1 root root 107816 2017-02-11 06:35 /system/lib/modules/ftdi_sio.ko
+rpi3:/ #
+```
+Kernel modules from the SoC vendor that are required for full Android or Charger modes should be located in /vendor/lib/modules.
+See: https://source.android.com/devices/architecture/kernel/loadable-kernel-modules
+```
+rpi3:/ # ls -al /vendor/lib/
+total 88
+drwxr-xr-x 3 root shell  4096 2017-02-11 07:38 .
+drwxr-xr-x 3 root shell  4096 2017-02-11 07:08 ..
+-rw-r--r-- 1 root root  30612 2017-02-11 07:08 libbt-vendor.so
+drwxr-xr-x 2 root shell  4096 2017-02-11 07:38 mediadrm
+rpi3:/ #
+```
+
 
 #### Usefull apps
 
