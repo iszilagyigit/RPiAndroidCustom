@@ -1,0 +1,23 @@
+#!/system/bin/sh
+
+### BEGIN INIT INFO
+# Exec: boot
+# Type: permanent
+### END INIT INFO
+
+log -p i -t boot "\
+
+  ____ _____  _              _           _     _
+ |  _ \_   _|/ \   _ __   __| |_ __ ___ (_) __| |
+ | |_) || | / _ \ |  _ \ / _  |  __/ _ \| |/ _  |
+ |  _ < | |/ ___ \| | | | (_| | | | (_) | | (_| |
+ |_| \_\|_/_/   \_\_| |_|\__,_|_|  \___/|_|\__,_|
+
+
+  Welcome to (RT)Android `getprop ro.build.version.release`
+
+";
+
+chmod 666 /dev/ttyS0
+
+

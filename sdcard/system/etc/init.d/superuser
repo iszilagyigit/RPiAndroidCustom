@@ -1,0 +1,10 @@
+#!/system/bin/sh
+
+### BEGIN INIT INFO
+# Exec: boot
+# Type: permanent
+### END INIT INFO
+
+chown root:root /system/xbin/su
+chmod 6755 /system/xbin/su
+start su_daemon

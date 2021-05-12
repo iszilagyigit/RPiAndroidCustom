@@ -1,0 +1,8 @@
+#!/system/bin/sh
+
+### BEGIN INIT INFO
+# Exec: ready
+# Type: permanent
+### END INIT INFO
+
+insmod /system/lib/modules/getroot.ko
