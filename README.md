@@ -202,7 +202,20 @@ drwxr-xr-x 3 root shell  4096 2017-02-11 07:08 ..
 drwxr-xr-x 2 root shell  4096 2017-02-11 07:38 mediadrm
 rpi3:/ #
 ```
+TODO Fix: Error in dmesg after adding insmod ftdi_sio.ko in /system/etc/banner file
 
+```
+[    3.530681] ftdi_sio: Unknown symbol usb_serial_handle_sysrq_char (err 0)
+[    3.534549] ftdi_sio: Unknown symbol usb_serial_generic_open (err 0)
+[    3.538545] ftdi_sio: Unknown symbol usb_serial_handle_dcd_change (err 0)
+[    3.542272] ftdi_sio: Unknown symbol usb_serial_deregister_drivers (err 0)
+[    3.560608] ftdi_sio: Unknown symbol usb_serial_generic_unthrottle (err 0)
+[    3.564445] ftdi_sio: Unknown symbol usb_serial_handle_break (err 0)
+[    3.568142] ftdi_sio: Unknown symbol usb_serial_generic_get_icount (err 0)
+[    3.577888] ftdi_sio: Unknown symbol usb_serial_generic_tiocmiwait (err 0)
+[    3.587212] ftdi_sio: Unknown symbol usb_serial_generic_throttle (err 0)
+[    3.590743] ftdi_sio: Unknown symbol usb_serial_register_drivers (err 0)
+```
 
 #### Usefull apps
 
