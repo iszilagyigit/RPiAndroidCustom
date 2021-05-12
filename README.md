@@ -145,6 +145,37 @@ For Zygote initialization see:
 [androidsource]/frameworks/base/core/java/com/android/internal/os/ZygoteInit.java
 see also android.R
 
+#### Boot loglines to check
+
+1970-01-01 01:00:16.954 442-442/? D/PackageManager: No files in app dir /system/vendor/app
+1970-01-01 01:00:16.954 442-442/? D/PackageManager: No files in app dir /oem/app
+...
+1970-01-01 01:00:19.389 442-442/? D/PackageManager: No files in app dir /data/app-private
+1970-01-01 01:00:19.390 442-442/? D/PackageManager: No files in app dir /data/app-ephemeral
+1970-01-01 01:00:19.391 442-442/? E/PackageManager: There should probably be exactly one setup wizard; found 2: matches=[ResolveInfo{1f38235 com.google.android.setupwizard/.SetupWizardActivity p=5 m=0x108000}, ResolveInfo{58c6ca com.android.provision/.DefaultActivity p=1 m=0x108000}]
+
+...
+
+1970-01-01 01:00:20.340 442-442/? D/SensorService: nuSensorService starting...
+1970-01-01 01:00:20.340 442-442/? E/SensorService: couldn't load sensors module (No such file or directory)
+1970-01-01 01:00:20.347 442-442/? I/SystemServiceManager: Starting com.android.server.BatteryService
+1970-01-01 01:00:20.365 442-442/? I/SystemServiceManager: Starting com.android.server.usage.UsageStatsService
+1970-01-01 01:00:20.395 442-442/? I/SystemServiceManager: Starting com.android.server.webkit.WebViewUpdateService
+...
+1970-01-01 01:00:20.847 442-442/? D/BluetoothManagerService: Loading stored name and address
+1970-01-01 01:00:20.848 442-442/? D/BluetoothManagerService: Stored bluetooth Name=RPI3,Address=22:22:1E:41:34:59
+1970-01-01 01:00:20.848 442-442/? D/BluetoothManagerService: Bluetooth persisted state: 0
+...
+1970-01-01 01:00:24.226 442-582/? D/gps_glonass_serial: GPS sent to device: $PUBX,40,GGA,100,100,100,0*5b
+1970-01-01 01:00:24.226 442-582/? D/gps_glonass_serial: GPS sent to device: $PUBX,40,GLL,100,100,100,0*5d
+1970-01-01 01:00:24.226 442-582/? D/gps_glonass_serial: GPS sent to device: $PUBX,40,VTG,100,100,100,0*5f
+1970-01-01 01:00:24.226 442-582/? D/gps_glonass_serial: GPS sent to device: $PUBX,40,GSA,100,100,100,0*4f
+1970-01-01 01:00:24.226 442-582/? D/gps_glonass_serial: GPS sent to device: $PUBX,40,GSV,100,100,100,0*58
+1970-01-01 01:00:24.226 442-582/? D/gps_glonass_serial: GPS sent to device: $PUBX,40,RMC,100,100,100,0*46
+1970-01-01 01:00:24.226 442-582/? D/gps_glonass_serial: GPS thread running
+
+
+
 #### FTDI support?!
 
 Linux kernel driver in:
