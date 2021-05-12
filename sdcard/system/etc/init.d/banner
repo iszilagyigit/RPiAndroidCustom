@@ -18,6 +18,10 @@ log -p i -t boot "\
 
 ";
 
+# iszilagyi GPS
 chmod 666 /dev/ttyS0
+# iszilagyi FTDI
+insmod /system/lib/modules/ftdi_sio.ko
+
 
 
