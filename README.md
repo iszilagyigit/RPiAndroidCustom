@@ -190,6 +190,7 @@ rpi3:/ # ls -al /system/lib/modules/*ftdi*.ko
 -rw-r--r-- 1 root root  39088 2017-02-11 06:35 /system/lib/modules/ftdi-elan.ko
 -rw-r--r-- 1 root root 107816 2017-02-11 06:35 /system/lib/modules/ftdi_sio.ko
 rpi3:/ #
+-rw-r--r-- 1 root root **** 2017-02-11 06:35 /system/lib/modules/usbserial.ko
 ```
 Kernel modules from the SoC vendor that are required for full Android or Charger modes should be located in /vendor/lib/modules.
 See: https://source.android.com/devices/architecture/kernel/loadable-kernel-modules
@@ -202,19 +203,25 @@ drwxr-xr-x 3 root shell  4096 2017-02-11 07:08 ..
 drwxr-xr-x 2 root shell  4096 2017-02-11 07:38 mediadrm
 rpi3:/ #
 ```
-TODO Fix: Error in dmesg after adding insmod ftdi_sio.ko in /system/etc/banner file
+adding in /system/etc/banner 
+
 
 ```
-[    3.530681] ftdi_sio: Unknown symbol usb_serial_handle_sysrq_char (err 0)
-[    3.534549] ftdi_sio: Unknown symbol usb_serial_generic_open (err 0)
-[    3.538545] ftdi_sio: Unknown symbol usb_serial_handle_dcd_change (err 0)
-[    3.542272] ftdi_sio: Unknown symbol usb_serial_deregister_drivers (err 0)
-[    3.560608] ftdi_sio: Unknown symbol usb_serial_generic_unthrottle (err 0)
-[    3.564445] ftdi_sio: Unknown symbol usb_serial_handle_break (err 0)
-[    3.568142] ftdi_sio: Unknown symbol usb_serial_generic_get_icount (err 0)
-[    3.577888] ftdi_sio: Unknown symbol usb_serial_generic_tiocmiwait (err 0)
-[    3.587212] ftdi_sio: Unknown symbol usb_serial_generic_throttle (err 0)
-[    3.590743] ftdi_sio: Unknown symbol usb_serial_register_drivers (err 0)
+insmod /system/lib/modules/usbserial.ko
+insmod /system/lib/modules/ftdi_sio.ko
+chmod 666 /dev/ttyUSB0
+```
+
+```
+[  340.938008] usb 1-1.2: new full-speed USB device number 4 using dwc_otg
+[  341.060553] usb 1-1.2: New USB device found, idVendor=0403, idProduct=6001
+[  341.068553] usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  341.076372] usb 1-1.2: Product: FT232R USB UART
+[  341.084465] usb 1-1.2: Manufacturer: FTDI
+[  341.091850] usb 1-1.2: SerialNumber: 00000000
+[  341.108495] ftdi_sio 1-1.2:1.0: FTDI USB Serial Device converter detected
+[  341.116152] usb 1-1.2: Detected FT232RL
+[  341.124486] usb 1-1.2: FTDI USB Serial Device converter now attached to ttyUSB0
 ```
 
 #### Usefull apps
