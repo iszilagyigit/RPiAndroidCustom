@@ -173,6 +173,12 @@ see also android.R
 1970-01-01 01:00:24.226 442-582/? D/gps_glonass_serial: GPS sent to device: $PUBX,40,GSV,100,100,100,0*58
 1970-01-01 01:00:24.226 442-582/? D/gps_glonass_serial: GPS sent to device: $PUBX,40,RMC,100,100,100,0*46
 1970-01-01 01:00:24.226 442-582/? D/gps_glonass_serial: GPS thread running
+...
+1970-01-01 01:00:25.299 584-584/com.android.phone I/Telephony: AccountEntry: Registered phoneAccount: [[ ] PhoneAccount: ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, [e0184adedf913b076626646d3f52c3b49c39ad6d], UserHandle{0} Capabilities: CallProvider MultiUser PlaceEmerg SimSub  Schemes: tel voicemail  Extras: null GroupId: [da39a3ee5e6b4b0d3255bfef95601890afd80709]] with handle: ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, [e0184adedf913b076626646d3f52c3b49c39ad6d], UserHandle{0}
+1970-01-01 01:00:25.307 584-584/com.android.phone I/Telephony: PstnIncomingCallNotifier: Registering: Handler (com.android.internal.telephony.GsmCdmaPhone) {543cef1}
+1970-01-01 01:00:25.323 584-584/com.android.phone E/PhoneInterfaceManager: [PhoneIntfMgr] getIccId: No UICC
+1970-01-01 01:00:25.327 442-454/? W/Telecom: : registerPhoneAccount not allowed on non-voice capable device.: TSI.rPA@AAY
+...
 
 
 
