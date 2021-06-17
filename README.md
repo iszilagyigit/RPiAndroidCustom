@@ -162,6 +162,7 @@ see also android.R
 
 #### Boot loglines to check
 
+```
 1970-01-01 01:00:16.954 442-442/? D/PackageManager: No files in app dir /system/vendor/app
 1970-01-01 01:00:16.954 442-442/? D/PackageManager: No files in app dir /oem/app
 ...
@@ -193,9 +194,7 @@ see also android.R
 1970-01-01 01:00:25.307 584-584/com.android.phone I/Telephony: PstnIncomingCallNotifier: Registering: Handler (com.android.internal.telephony.GsmCdmaPhone) {543cef1}
 1970-01-01 01:00:25.323 584-584/com.android.phone E/PhoneInterfaceManager: [PhoneIntfMgr] getIccId: No UICC
 1970-01-01 01:00:25.327 442-454/? W/Telecom: : registerPhoneAccount not allowed on non-voice capable device.: TSI.rPA@AAY
-...
-
-
+```
 
 #### FTDI support?!
 
