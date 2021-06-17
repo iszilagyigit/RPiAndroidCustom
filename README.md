@@ -66,6 +66,21 @@ Note: Disable playstore autoupdate.
 
 [packageslist.txt](packageslist.txt)
 
+```
+rpi3:/ $ pm list packages -3
+package:stericson.busybox
+package:com.ghisler.android.TotalCommander
+package:com.chartcross.gpstest
+package:media.audioplayer.musicplayer
+package:com.spotify.music
+package:com.termux
+package:com.nng.igo.primong.igoworld
+package:com.pdc.main.parkdistancecontrol2
+package:com.alphabetlabs.deviceinfo
+package:de.zorillasoft.musicfolderplayer
+```
+
+
 ### Partitions
 
 /boot
