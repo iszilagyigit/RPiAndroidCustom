@@ -221,8 +221,10 @@ Linux kernel driver in:
 rpi3:/ # ls -al /system/lib/modules/*ftdi*.ko
 -rw-r--r-- 1 root root  39088 2017-02-11 06:35 /system/lib/modules/ftdi-elan.ko
 -rw-r--r-- 1 root root 107816 2017-02-11 06:35 /system/lib/modules/ftdi_sio.ko
+
+-rw-r--r-- 1 root root 15988 2017-02-11 06:35 /system/lib/modules/usb_wwan.ko
+-rw-r--r-- 1 root root 45612 2017-02-11 06:35 /system/lib/modules/usbserial.ko
 rpi3:/ #
--rw-r--r-- 1 root root **** 2017-02-11 06:35 /system/lib/modules/usbserial.ko
 ```
 Kernel modules from the SoC vendor that are required for full Android or Charger modes should be located in /vendor/lib/modules.
 See: https://source.android.com/devices/architecture/kernel/loadable-kernel-modules
