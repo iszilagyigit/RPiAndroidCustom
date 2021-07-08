@@ -48,3 +48,9 @@ dmesg
 [  173.332994] GobiSerial: Unknown symbol usb_serial_register_drivers (err 0)
 rpi3:/ #
 ```
+
+Fixes(?)
+
+* For (Stack_chk): If GCC sees both fstack-protector and fno-stack-protector in the set of options, the last one on the command line is the one that takes effect.
+
+* For (aeabi_unwind_cpp_pr1): It turns out exceptions are enabled by default (which is what generates the code that calls eabi_unwind_cpp_pr1). To disable them all that is needed is to pass: -fno-exceptions as an argument to the gcc/g++ compiler and the problem is solved.
