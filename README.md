@@ -240,6 +240,18 @@ adding in /system/etc/banner
 
 ```
 insmod /system/lib/modules/usbserial.ko
+
+rpi3:/ # dmesg -s 300
+[ 1562.551828] usbcore: registered new interface driver usbserial
+[ 1562.557129] usbcore: registered new interface driver usbserial_generic
+[ 1562.562193] usbserial: USB Serial support registered for generic
+rpi3:/ # lsmod
+Module                  Size  Used by
+usbserial              19826  0
+getroot                 2116  0
+rpi3:/ #
+
+
 insmod /system/lib/modules/ftdi_sio.ko
 chmod 666 /dev/ttyUSB0
 ```
