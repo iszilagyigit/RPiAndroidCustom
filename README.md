@@ -25,6 +25,24 @@ half, thumb, fastmult, vfp, edsp, neon, vfpv3,
 tls, vfpv4, idiva, idivt, vdpd32 lpae evtstrm, crc32
 ---
 
+## Loaded Kernel Module(s)
+
+```
+rpi3:/ # lsmod
+Module                  Size  Used by
+getroot                 2116  0
+1|rpi3:/ # modinfo getroot
+modinfo: /lib/modules/4.4.47+: No such file or directory
+1|rpi3:/ # modinfo /system/lib/modules/getroot.ko
+filename:       /system/lib/modules/getroot.ko
+license:        GPL
+description:    Permission elevator for Android apps
+author:         Igor Kalkov, Maximilian Schander
+srcversion:     F62F83B6C88F54CCB762A29
+depends:
+vermagic:       4.4.47+ SMP preempt mod_unload modversions ARMv7 p2v8
+rpi3:/ #
+```
 
 ## Directory content
 
