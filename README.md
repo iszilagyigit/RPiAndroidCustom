@@ -314,3 +314,21 @@ files (binary)
 /system/lib/libwiringPi.so
 /system/xbin/gpio
 
+#### Telephony
+
+```
+rpi3:/data/data # getprop | grep gsm
+[gsm.current.phone-type]: [1]
+[gsm.network.type]: [Unknown]
+[gsm.operator.alpha]: []
+[gsm.operator.iso-country]: []
+[gsm.operator.isroaming]: [false]
+[gsm.operator.numeric]: []
+[gsm.sim.operator.alpha]: []
+[gsm.sim.operator.iso-country]: []
+[gsm.sim.operator.numeric]: []
+[gsm.sim.state]: [NOT_READY]
+rpi3:/data/data # getprop | grep radio
+[ro.radio.noril]: [1]
+rpi3:/data/data #
+```
