@@ -337,6 +337,10 @@ Usage: /system/bin/rild -l <ril impl library> [-- <args for impl library>]
 1|rpi3:/etc/init # ls -al /system/lib/libreference-ril.so
 -rw-r--r-- 1 root root 42608 2017-02-11 07:31 /system/lib/libreference-ril.so
 
+130|rpi3:/ # /system/bin/rild -l /system/lib/libreference-ril.so -- -d /dev/ttyUSB2
+fatal error opening "/sys/power/wake_lock": No such file or directory
+fatal error opening "/sys/android_power/acquire_partial_wake_lock": No such file or directory
+255|rpi3:/ #
 
 
 rpi3:/data/data # getprop | grep gsm
