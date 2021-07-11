@@ -334,6 +334,9 @@ service ril-daemon /system/bin/rild
 rpi3:/etc/init # /system/bin/rild --help
 Usage: /system/bin/rild -l <ril impl library> [-- <args for impl library>]
 1|rpi3:/etc/init #
+1|rpi3:/etc/init # ls -al /system/lib/libreference-ril.so
+-rw-r--r-- 1 root root 42608 2017-02-11 07:31 /system/lib/libreference-ril.so
+
 
 
 rpi3:/data/data # getprop | grep gsm
