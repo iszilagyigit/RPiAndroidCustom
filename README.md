@@ -314,9 +314,28 @@ files (binary)
 /system/lib/libwiringPi.so
 /system/xbin/gpio
 
-#### Telephony
+#### Telephony (ril)
+
+https://source.android.com/devices/tech/connect/ril
+https://www.e-consystems.com/Articles/Android/Android-RIL-Architecture.asp
+http://www.wless.ru/files/GSM/Neoway/N720/Neoway_Android_RIL_Driver_User_Guide_V1_0.pdf
+Quectel_Android_RIL_Driver_User_Guide_V1.8.pdf
+
 
 ```
+1|rpi3:/etc/init # cat /etc/init/rild.rc
+service ril-daemon /system/bin/rild
+    class main
+    socket rild stream 660 root radio
+    socket sap_uim_socket1 stream 660 bluetooth bluetooth
+    socket rild-debug stream 660 radio system
+    user root
+    group radio cache inet misc audio log readproc wakelock
+rpi3:/etc/init # /system/bin/rild --help
+Usage: /system/bin/rild -l <ril impl library> [-- <args for impl library>]
+1|rpi3:/etc/init #
+
+
 rpi3:/data/data # getprop | grep gsm
 [gsm.current.phone-type]: [1]
 [gsm.network.type]: [Unknown]
@@ -332,3 +351,4 @@ rpi3:/data/data # getprop | grep radio
 [ro.radio.noril]: [1]
 rpi3:/data/data #
 ```
+
