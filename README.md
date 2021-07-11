@@ -165,6 +165,34 @@ $GPGSV,3,2,12,11,51,291,23,14,29,133,23,18,66,291,,22,36,225,18*70
 ```
 
 
+#### Changes for SIM7600E-H (usb breakout board)
+
+```
+$insmod /system/lib/modules/usbserial.ko vendor=0x1e0e product=0x9001
+$dmesg 
+# The third mounted ttyUSB? is the "AT" interface. Example:
+cat /dev/ttyUSB2
++CPIN: READY
+SMS DONE
+PB DONE
+
+AT
+OK
+
+ATI
+Manufacturer: SIMCOM INCORPORATED
+Model: SIMCOM_SIM7600E-H
+Revision: SIM7600M22_V1.1
+IMEI: 860147050680683
++GCAP: +CGSM
+OK
+```
+Connect to ttyUSB with 'microcom'
+```
+/system/xbin/busybox microcom /dev/ttyUSB2
+```
+
+
 #### Root Partition (/)
 
 The *init.rc* file.
