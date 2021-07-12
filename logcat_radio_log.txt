@@ -1,0 +1,293 @@
+adb logcat -b radio
+
+```
+01-01 00:00:03.002   156   156 D RILD    : **RIL Daemon Started**
+01-01 00:00:03.002   156   156 D RILD    : **RILd param count=6**
+01-01 00:00:03.064   156   156 W RILD    : RIL_SAP_Init not defined or exported in /system/lib/libreference-ril.so: undefined symbol: RIL_SAP_Init
+01-01 00:00:03.064   156   156 D RILD    : RIL_Init argc = 5 clientId = 0
+01-01 00:00:03.064   156   156 I RIL     : Opening tty device /dev/ttyUSB2
+01-01 00:00:03.064   156   156 I RIL     : Client id received 0
+01-01 00:00:03.064   156   156 D RILD    : RIL_Init rilInit completed
+01-01 00:00:03.064   156   156 I RILC    : SIM_COUNT: 1
+01-01 00:00:03.064   156   156 E RILC    : RIL_register: RIL version 12
+01-01 00:00:03.064   156   156 I RILC    : s_registerCalled flag set, 1
+01-01 00:00:03.064   156   156 I RILC    : Start to listen RIL_SOCKET_1
+01-01 00:00:03.064   156   156 D RILD    : RIL_Init RIL_register completed
+01-01 00:00:03.064   156   156 D RILD    : RIL_register_socket completed
+01-01 00:00:03.064   156   156 D RILD    : RIL_Init starting sleep loop
+01-01 00:00:10.291   142   142 D TelephonyManager: /proc/cmdline=8250.nr_uarts=1 cma=256M@256M dma.dmachans=0x7f35 bcm2708_fb.fbwidth=800 bcm2708_fb.fbheight=480 bcm2709.boardrev=0xa02082 bcm2709.serial=0x4d776f94 smsc95xx.macaddr=B8:27:EB:77:6F:94 bcm2708_fb.fbswap=1 bcm2709.uart_clock=48000000 vc_mem.mem_base=0x3dc00000 vc_mem.mem_size=0x3f000000  initrd=0x01f00000 dwc_otg.lpm_enable=0 no_console_suspend root=/dev/ram0 acpi_irq_nobalance noirqbalance isolcpus=1 elevator=deadline rootwait androidboot.hardware=rpi3 androidboot.selinux=permissive
+01-01 00:00:13.065   156   164 D RIL     : setRadioState(0)
+01-01 00:00:13.066   156   164 D AT      : AT> ATE0Q0V1
+01-01 00:00:13.092   156   470 D AT      : AT< ATE0Q0V1
+01-01 00:00:13.092   156   470 D AT      : AT< OK
+01-01 00:00:13.092   156   470 D AT      : AT< OK
+01-01 00:00:13.343   156   164 D RIL     : query_ctec. current: 0xaaeff7e8, preferred: 0xaaeff7e4
+01-01 00:00:13.343   156   164 D AT      : AT> AT+CTEC?
+01-01 00:00:13.345   156   470 D AT      : AT< ERROR
+01-01 00:00:13.345   156   164 E RIL     : Error executing command: 0. response: 0xaaf18630. status: 0
+01-01 00:00:13.345   156   164 D AT      : AT> AT+WNAM
+01-01 00:00:13.347   156   470 D AT      : AT< ERROR
+01-01 00:00:13.347   156   164 I RIL     : Found GSM Modem
+01-01 00:00:13.347   156   164 D AT      : AT> ATE0Q0V1
+01-01 00:00:13.349   156   470 D AT      : AT< OK
+01-01 00:00:13.349   156   164 D AT      : AT> ATS0=0
+01-01 00:00:13.351   156   470 D AT      : AT< OK
+01-01 00:00:13.351   156   164 D AT      : AT> AT+CMEE=1
+01-01 00:00:13.352   156   470 D AT      : AT< OK
+01-01 00:00:13.352   156   164 D AT      : AT> AT+CREG=2
+01-01 00:00:13.353   156   470 D AT      : AT< OK
+01-01 00:00:13.353   156   164 D AT      : AT> AT+CGREG=1
+01-01 00:00:13.355   156   470 D AT      : AT< OK
+01-01 00:00:13.355   156   164 D AT      : AT> AT+CCWA=1
+01-01 00:00:13.357   156   470 D AT      : AT< OK
+01-01 00:00:13.357   156   164 D AT      : AT> AT+CMOD=0
+01-01 00:00:13.359   156   470 D AT      : AT< OK
+01-01 00:00:13.359   156   164 D AT      : AT> AT+CMUT=0
+01-01 00:00:13.372   156   470 D AT      : AT< ERROR
+01-01 00:00:13.372   156   164 D AT      : AT> AT+CSSN=0,1
+01-01 00:00:13.373   156   470 D AT      : AT< OK
+01-01 00:00:13.373   156   164 D AT      : AT> AT+COLP=0
+01-01 00:00:13.375   156   470 D AT      : AT< OK
+01-01 00:00:13.375   156   164 D AT      : AT> AT+CSCS="HEX"
+01-01 00:00:13.377   156   470 D AT      : AT< ERROR
+01-01 00:00:13.377   156   164 D AT      : AT> AT+CUSD=1
+01-01 00:00:13.379   156   470 D AT      : AT< OK
+01-01 00:00:13.379   156   164 D AT      : AT> AT+CGEREP=1,0
+01-01 00:00:13.382   156   470 D AT      : AT< OK
+01-01 00:00:13.382   156   164 D AT      : AT> AT+CMGF=0
+01-01 00:00:13.387   156   470 D AT      : AT< OK
+01-01 00:00:13.387   156   164 D AT      : AT> AT+CFUN?
+01-01 00:00:13.389   156   470 D AT      : AT< +CFUN: 1
+01-01 00:00:13.389   156   470 D AT      : AT< OK
+01-01 00:00:13.389   156   164 D RIL     : setRadioState(10)
+01-01 00:00:26.066   452   465 D TelephonyRegistry: listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+01-01 00:00:26.131   452   452 D TelephonyRegistry: systemRunning register for intents
+01-01 00:00:27.416   452   552 D TelephonyRegistry: listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+01-01 00:00:27.983   606   606 D TDC     : updateOrInsert: inserting: Modem { uuid=modem, state=0, rilModel=0, rat={}, maxActiveVoiceCall=1, maxActiveDataCall=1, maxStandby=1 }
+01-01 00:00:27.983   606   606 D TDC     : updateOrInsert: inserting: Sim { uuid=sim, modemUuid=modem, state=0 }
+01-01 00:00:28.144   606   606 D CdmaSSM : subscriptionSource from settings: 0
+01-01 00:00:28.144   606   606 I PhoneFactory: Cdma Subscription set to 0
+01-01 00:00:28.274   452   452 D TelephonyRegistry: notifyCellLocationForSubscriber: subId=0 cellLocation=Bundle[{}]
+01-01 00:00:28.280   606   606 I PhoneFactory: Network Mode set to 0
+01-01 00:00:28.356   606   606 D RILJ    : RIL(context, preferredNetworkType=0 cdmaSubscription=0)
+01-01 00:00:28.368   606   606 D RILJ    : Not starting RILReceiver: wifi-only [SUB0]
+01-01 00:00:28.423   606   606 D RILJ    : [3648]> GET_HARDWARE_CONFIG [SUB0]
+01-01 00:00:28.424   606   606 D RilRequest: [3648]< GET_HARDWARE_CONFIG error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+01-01 00:00:28.424   606   606 I PhoneFactory: Creating SubscriptionController
+01-01 00:00:28.449   606   606 D SubscriptionController: [SubscriptionController] init by Context
+01-01 00:00:28.512   606   606 D UiccController: Creating UiccController
+01-01 00:00:28.515   606   606 D TelephonyTester: register for intent action=com.android.internal.telephony.action_detached
+01-01 00:00:28.515   606   606 D TelephonyTester: register for intent action=com.android.internal.telephony.action_attached
+01-01 00:00:28.537   606   606 D Phone   : mDoesRilSendMultipleCallRing=true
+01-01 00:00:28.537   606   606 D Phone   : mCallRingDelay=3000
+01-01 00:00:28.554   606   606 D RILJ    : [3649]> RIL_REQUEST_START_LCE [SUB0]
+01-01 00:00:28.555   606   606 D RilRequest: [3649]< RIL_REQUEST_START_LCE error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+01-01 00:00:28.569   606   606 E RIL_ImsSms: getFormat should never be called from here!
+01-01 00:00:28.569   606   606 D SMSDispatcher: SMSDispatcher: ctor mSmsCapable=false format=unknown mSmsSendDisabled=true
+01-01 00:00:28.570   606   606 D RIL_ImsSms: ImsSMSDispatcher created
+01-01 00:00:28.571   606   606 D SMSDispatcher: SMSDispatcher: ctor mSmsCapable=false format=3gpp2 mSmsSendDisabled=true
+01-01 00:00:28.571   606   606 D CdmaSMSDispatcher: CdmaSMSDispatcher created
+01-01 00:00:28.617   606   606 D GsmInboundSmsHandler: created InboundSmsHandler
+01-01 00:00:28.625   606   606 D CdmaInboundSmsHandler: created InboundSmsHandler
+01-01 00:00:28.629   606   606 D SMSDispatcher: SMSDispatcher: ctor mSmsCapable=false format=3gpp mSmsSendDisabled=true
+01-01 00:00:28.629   606   606 D GsmSMSDispatcher: GsmSMSDispatcher created
+01-01 00:00:28.633   606   732 D GsmInboundSmsHandler: StartupState.processMessage:6
+01-01 00:00:28.633   606   734 D CdmaInboundSmsHandler: StartupState.processMessage:6
+01-01 00:00:28.634   606   734 D CdmaInboundSmsHandler: entering Idle state
+01-01 00:00:28.634   606   732 D GsmInboundSmsHandler: entering Idle state
+01-01 00:00:28.650   606   606 D IccCardProxy: ctor: ci=com.android.internal.telephony.RIL@c063a87 phoneId=0
+01-01 00:00:28.651   606   606 D CdmaSSM : subscriptionSource from settings: 0
+01-01 00:00:28.651   606   606 D CdmaSSM : cdmaSSM constructor: 0
+01-01 00:00:28.651   606   606 D IccCardProxy: update icc_operator_numeric=
+01-01 00:00:28.651   606   606 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.sim.operator.numeric value:  propVal=
+01-01 00:00:28.653   606   606 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.sim.operator.iso-country value:  propVal=
+01-01 00:00:28.654   606   606 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.sim.operator.alpha value:  propVal=
+01-01 00:00:28.655   606   606 E IccCardProxy: setExternalState: set mPhoneId=0 mExternalState=NOT_READY
+01-01 00:00:28.655   606   606 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.sim.state value: NOT_READY propVal=NOT_READY
+01-01 00:00:28.656   606   606 D IccCardProxy: broadcastIccStateChangedIntent intent ACTION_SIM_STATE_CHANGED value=NOT_READY reason=null for mPhoneId=0
+01-01 00:00:28.671   606   606 D RILJ    : setPhoneType=1 old value=0 [SUB0]
+01-01 00:00:28.671   606   606 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.current.phone-type value: 1 propVal=1
+01-01 00:00:28.672   606   606 D IccCardProxy: Setting radio tech UMTS
+01-01 00:00:28.672   606   606 D IccCardProxy: updateQuietMode: 3GPP subscription -> newQuietMode=false
+01-01 00:00:28.672   606   606 D IccCardProxy: updateQuietMode: no changes don't setExternalState
+01-01 00:00:28.672   606   606 D IccCardProxy: updateQuietMode: QuietMode is false (app_type=1 cdmaSource=-1)
+01-01 00:00:28.677   606   606 W CarrierConfigManager: Error getting config for subId -1 ICarrierConfigLoader is null
+01-01 00:00:28.678   452   673 D TelephonyRegistry: listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+01-01 00:00:28.716   606   606 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.network.type value: Unknown propVal=Unknown
+01-01 00:00:28.716   606   606 D RILJ    : [3650]> SIGNAL_STRENGTH [SUB0]
+01-01 00:00:28.717   606   606 D RilRequest: [3650]< SIGNAL_STRENGTH error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+01-01 00:00:28.718   606   606 D SST     : notifyDataRegStateRilRadioTechnologyChanged: drs=1 rat=0
+01-01 00:00:28.718   606   606 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.network.type value: Unknown propVal=Unknown
+01-01 00:00:28.773   606   606 D DCT     : [0]DCT.constructor
+01-01 00:00:28.781   452   673 D TelephonyRegistry: listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+01-01 00:00:28.782   606   606 D Dcc     : E ctor
+01-01 00:00:28.782   606   606 D Dcc     : X ctor
+01-01 00:00:28.784   606   606 D SubscriptionController: [getPhoneId] asked for default subId=-1
+01-01 00:00:28.785   606   739 D DcTesterDeacativateAll: register for intent action=com.android.internal.telephony.dataconnection.action_deactivate_all
+01-01 00:00:28.785   606   739 D DcTesterDeacativateAll: register for intent action=com.android.internal.telephony.action_detached
+01-01 00:00:28.788   606   606 D DcTesterFailBrinupAll: register for intent action=com.android.internal.telephony.dataconnection.action_fail_bringup
+01-01 00:00:28.788   606   606 D DcTesterFailBrinupAll: register for intent action=com.android.internal.telephony.action_detached
+01-01 00:00:28.788   606   606 D DcTesterFailBrinupAll: register for intent action=com.android.internal.telephony.action_attached
+01-01 00:00:28.790   606   606 D SST     : notifyDataRegStateRilRadioTechnologyChanged: drs=1 rat=0
+01-01 00:00:28.790   606   606 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.network.type value: Unknown propVal=Unknown
+01-01 00:00:28.792   606   606 D DCT     : [0]update sub = -2
+01-01 00:00:28.792   606   606 D DCT     : [0]update(): Active DDS, register for all events now!
+01-01 00:00:28.793   606   606 D GsmCdmaPhone: [GsmCdmaPhone] updateCurrentCarrierInProvider: mSubId = -2 currentDds = -1 operatorNumeric = null
+01-01 00:00:28.794   606   606 D DCT     : [0]initApnContexts: E
+01-01 00:00:28.795   606   606 D DCT     : [0]initApnContexts: skipping unknown type=1
+01-01 00:00:28.795   606   606 D DCT     : [0]initApnContexts: skipping unknown type=9
+01-01 00:00:28.810   606   606 D GsmCdmaPhone: [GsmCdmaPhone] GsmCdmaPhone: constructor: sub = 0
+01-01 00:00:28.810   606   606 I PhoneFactory: Creating Phone with type = 1 sub = 0
+01-01 00:00:28.810   606   606 I PhoneFactory: defaultSmsApplication: NONE
+01-01 00:00:28.814   606   606 I PhoneFactory: Creating SubInfoRecordUpdater
+01-01 00:00:28.814   606   606 D SubscriptionInfoUpdater: Constructor invoked
+01-01 00:00:28.876   452   552 D TelephonyRegistry: listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+01-01 00:00:28.879   452   672 D TelephonyRegistry: listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+01-01 00:00:28.882   606   606 D PhoneSwitcher: PhoneSwitcher started
+01-01 00:00:28.883   606   606 D ProxyController: Constructor - Enter
+01-01 00:00:28.887   606   606 D ProxyController: clearTransaction
+01-01 00:00:28.887   606   606 D ProxyController: clearTransaction: phoneId=0 status=IDLE
+01-01 00:00:28.887   606   606 D ProxyController: Constructor - Exit
+01-01 00:00:28.888   606   606 D TelephonyNetworkFactory[0]: Registering NetworkFactory
+01-01 00:00:28.891   606   606 D CallManager: registerPhone(GSM Handler (com.android.internal.telephony.GsmCdmaPhone) {8fc0f02})
+01-01 00:00:28.896   452   673 D TelephonyRegistry: listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+01-01 00:00:28.941   452   463 D TelephonyRegistry: listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+01-01 00:00:29.014   606   606 D RILJ    : [3651]> RIL_REQUEST_SET_TTY_MODE : 0 [SUB0]
+01-01 00:00:29.014   606   606 D RilRequest: [3651]< RIL_REQUEST_SET_TTY_MODE error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+01-01 00:00:29.031   452   552 D TelephonyRegistry: listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+01-01 00:00:29.032   606   606 D SubscriptionController: [getPhoneId] asked for default subId=-1
+01-01 00:00:29.035   606   606 D UiccController: EVENT_RADIO_UNAVAILABLE, dispose card
+01-01 00:00:29.035   606   606 D Phone   : config LCE service failed: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE
+01-01 00:00:29.036   606   606 D RILJ    : [3652]> GET_CURRENT_CALLS [SUB0]
+01-01 00:00:29.036   606   606 D RilRequest: [3652]< GET_CURRENT_CALLS error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+01-01 00:00:29.037   606   606 D GsmSMSDispatcher: GsmSMSDispatcher: subId = -2 slotId = 0
+01-01 00:00:29.037   606   606 E IccCardProxy: setExternalState: !override and newstate unchanged from NOT_READY
+01-01 00:00:29.037   606   606 E IccCardProxy: setExternalState: !override and newstate unchanged from NOT_READY
+01-01 00:00:29.037   606   606 D GsmCdmaPhone: [GsmCdmaPhone] Event EVENT_RADIO_OFF_OR_NOT_AVAILABLE Received
+01-01 00:00:29.037   606   606 E IccCardProxy: setExternalState: !override and newstate unchanged from NOT_READY
+01-01 00:00:29.037   606   606 D SST     : mDeviceShuttingDown=false, mDesiredPowerState=true, getRadioState=RADIO_UNAVAILABLE, mPowerOffDelayNeed=true, mAlarmSwitch=false, mRadioDisabledByCarrier=false
+01-01 00:00:29.037   606   606 D SST     : useDataRegStateForDataOnlyDevice: VoiceRegState=1 DataRegState=1
+01-01 00:00:29.037   606   606 D SST     : Poll ServiceState done:  oldSS=[1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported 0 0 RoamInd=0 DefRoamInd=0 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] newSS=[1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] oldMaxDataCalls=1 mNewMaxDataCalls=1 oldReasonDataDenied=-1 mNewReasonDataDenied=-1
+01-01 00:00:29.037   606   606 D SST     : updateSpnDisplay: radio is on but out of service, set plmn='No service'
+01-01 00:00:29.038   606   606 D SST     : updateSpnDisplay: changed sending intent rule=0 showPlmn='true' plmn='No service' showSpn='false' spn='' dataSpn='' subId='-2'
+01-01 00:00:29.040   606   606 D SubscriptionController: [setPlmnSpn] No valid subscription to store info
+01-01 00:00:29.040   606   606 D SubscriptionController: notifySubscriptionInfoChanged:
+01-01 00:00:29.040   452   552 D TelephonyRegistry: notifySubscriptionInfoChanged: first invocation mRecords.size=14
+01-01 00:00:29.045   606   606 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.operator.alpha value:  propVal=
+01-01 00:00:29.046   606   606 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.operator.numeric value:  propVal=
+01-01 00:00:29.051   606   606 D SST     : operatorNumeric is null
+01-01 00:00:29.051   606   606 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.operator.iso-country value:  propVal=
+01-01 00:00:29.052   606   606 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.operator.isroaming value: false propVal=false
+01-01 00:00:29.052   606   606 D SST     : Broadcasting ServiceState : 1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false
+01-01 00:00:29.053   606   606 D DefaultPhoneNotifier: nofityServiceState: mRegistry=com.android.internal.telephony.ITelephonyRegistry$Stub$Proxy@9687c5a ss=1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false sender=Handler (com.android.internal.telephony.GsmCdmaPhone) {8fc0f02} phondId=0 subId=-2
+01-01 00:00:29.056   606   606 D SubscriptionController: [getSlotId]- subId invalid
+01-01 00:00:29.057   452   672 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+01-01 00:00:29.074   606   606 D SST     : mDeviceShuttingDown=false, mDesiredPowerState=true, getRadioState=RADIO_UNAVAILABLE, mPowerOffDelayNeed=true, mAlarmSwitch=false, mRadioDisabledByCarrier=false
+01-01 00:00:29.074   606   606 D SST     : useDataRegStateForDataOnlyDevice: VoiceRegState=1 DataRegState=1
+01-01 00:00:29.074   606   606 D SST     : Poll ServiceState done:  oldSS=[1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] newSS=[1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] oldMaxDataCalls=1 mNewMaxDataCalls=1 oldReasonDataDenied=-1 mNewReasonDataDenied=-1
+01-01 00:00:29.075   606   606 D DCT     : [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+01-01 00:00:29.075   606   606 D DCT     : [0]Wifi state changed
+01-01 00:00:29.075   606   606 D DCT     : [0]WIFI_STATE_CHANGED_ACTION: enabled=true mIsWifiConnected=false
+01-01 00:00:29.075   606   606 D DCT     : [0]onRadioOffOrNotAvailable: is off and clean up all connections
+01-01 00:00:29.075   606   606 D DCT     : [0]cleanUpAllConnections: tearDown=false reason=radioTurnedOff
+01-01 00:00:29.075   606   606 D DCT     : [0]stopNetStatPoll
+01-01 00:00:29.076   606   606 D DCT     : [0]cleanUpConnection: mDisconnectPendingCount = 0
+01-01 00:00:29.077   606   606 D DCT     : [0]isDataAllowed: No - SIM not loaded - defaultDataSelected= false - Not attached
+01-01 00:00:29.077   606   606 D DCT     : [0]onDataConnectionDetached: stop polling and notify detached
+01-01 00:00:29.077   606   606 D DCT     : [0]stopNetStatPoll
+01-01 00:00:29.078   606   606 D DCT     : [0]notifyDataConnection: reason=dataDetached
+01-01 00:00:29.078   606   606 D DCT     : [0]isDataAllowed: No - SIM not loaded - defaultDataSelected= false - Not attached
+01-01 00:00:29.078   606   606 D DCT     : [0]onRoamingOff
+01-01 00:00:29.079   606   606 D DCT     : [0]isDataAllowed: No - SIM not loaded - defaultDataSelected= false - Not attached
+01-01 00:00:29.080   606   606 D DCT     : [0]setupDataOnConnectableApns: roamingOff
+01-01 00:00:29.080   606   606 D DCT     : [0]setupDataOnConnectableApns: nwTypeChanged
+01-01 00:00:29.080   606   606 D SubscriptionInfoUpdater: [Receiver]+
+01-01 00:00:29.080   606   606 D SubscriptionInfoUpdater: Action: android.intent.action.SIM_STATE_CHANGED
+01-01 00:00:29.080   606   606 D SubscriptionInfoUpdater: slotId: 0
+01-01 00:00:29.080   606   606 D SubscriptionInfoUpdater: simStatus: NOT_READY
+01-01 00:00:29.080   606   606 D SubscriptionInfoUpdater: Ignoring simStatus: NOT_READY
+01-01 00:00:29.080   606   606 D SubscriptionInfoUpdater: [Receiver]-
+01-01 00:00:29.080   606   606 D TelephonyNetworkFactory[0]: onSubIdChange -1->-2
+01-01 00:00:29.081   606   606 D TelephonyNetworkFactory[0]: got request NetworkRequest [ REQUEST id=1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ] with score 0
+01-01 00:00:29.090   606   606 D DebugService: DebugService DebugService:
+01-01 00:00:29.093   606   606 D RILJ    : [3653]> RIL_REQUEST_QUERY_TTY_MODE [SUB0]
+01-01 00:00:29.094   606   606 D RilRequest: [3653]< RIL_REQUEST_QUERY_TTY_MODE error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+01-01 00:00:29.094   606   606 D GsmSMSDispatcher: GsmSMSDispatcher: subId = -2 slotId = 0
+01-01 00:00:29.094   606   606 E IccCardProxy: setExternalState: !override and newstate unchanged from NOT_READY
+01-01 00:00:29.094   606   606 D GsmCdmaCallTracker: Event EVENT_POLL_CALLS_RESULT Received
+01-01 00:00:29.094   606   606 D GsmCdmaCallTracker: [GsmCdmaCallTracker] update phone state, old=IDLE new=IDLE
+01-01 00:00:29.094   606   606 D SST     : SubscriptionListener.onSubscriptionInfoChanged
+01-01 00:00:29.094   606   606 E Phone   : getStoredVoiceMessageCount: invalid subId -2
+01-01 00:00:29.094   606   606 D GsmCdmaPhone: [GsmCdmaPhone] updateVoiceMail countVoiceMessages = 0 subId -2
+01-01 00:00:29.094   606   606 E Phone   : setVoiceMessageCount in sharedPreference: invalid subId -2
+01-01 00:00:29.094   606   606 D DCT     : [0]SubscriptionListener.onSubscriptionInfoChanged
+01-01 00:00:29.094   606   606 D PhoneSwitcher: evaluating due to subChanged default 0->-1 phone[0] 0->-2
+01-01 00:00:29.096   606   606 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+01-01 00:00:29.098   606   606 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+01-01 00:00:29.189   606   606 D PhoneSwitcher: evaluating due to netRequest
+01-01 00:00:29.194   606   606 D TelephonyNetworkFactory[0]: not acting - isApp=false, isAct=false NetworkRequest [ REQUEST id=1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+01-01 00:00:30.617   606   606 D WAP PUSH: Received broadcast android.intent.action.USER_UNLOCKED
+01-01 00:00:30.620   606   606 D WAP PUSH: Received broadcast android.intent.action.USER_UNLOCKED
+01-01 00:00:30.620   606   606 D SmsBroadcastUndelivered: Received broadcast android.intent.action.USER_UNLOCKED
+01-01 00:00:30.631   606   606 D SubscriptionInfoUpdater: [Receiver]+
+01-01 00:00:30.631   606   606 D SubscriptionInfoUpdater: Action: android.intent.action.USER_UNLOCKED
+01-01 00:00:30.631   606   606 D SubscriptionInfoUpdater: Broadcasting intent ACTION_SIM_STATE_CHANGED for mCardIndex: 0
+01-01 00:00:30.667   606   606 D SubscriptionInfoUpdater: [Receiver]-
+01-01 00:00:30.667   606   606 D SubscriptionInfoUpdater: [Receiver]+
+01-01 00:00:30.667   606   606 D SubscriptionInfoUpdater: Action: android.intent.action.SIM_STATE_CHANGED
+01-01 00:00:30.667   606   606 D SubscriptionInfoUpdater: slotId: 0
+01-01 00:00:30.667   606   606 D SubscriptionInfoUpdater: simStatus: NOT_READY
+01-01 00:00:30.680   606   606 D SubscriptionInfoUpdater: Ignoring simStatus: NOT_READY
+01-01 00:00:30.680   606   606 D SubscriptionInfoUpdater: [Receiver]-
+01-01 00:00:30.712   606   850 D SmsBroadcastUndelivered: scanning raw table for undelivered messages
+01-01 00:00:30.971   606   850 D SmsBroadcastUndelivered: finished scanning raw table in 258 ms
+01-01 00:00:31.608   606   731 D GsmCellBroadcastHandler: mWakeLock released
+01-01 00:00:31.624   606   733 D CellBroadcastHandler: mWakeLock released
+01-01 00:00:31.625   606   618 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+01-01 00:00:31.634   606   735 D CdmaServiceCategoryProgramHandler: mWakeLock released
+01-01 00:00:31.637   606   734 D CdmaInboundSmsHandler: IdleState.processMessage:5
+01-01 00:00:31.637   606   734 D CdmaInboundSmsHandler: Idle state processing message type 5
+01-01 00:00:31.639   606   732 D GsmInboundSmsHandler: IdleState.processMessage:5
+01-01 00:00:31.639   606   732 D GsmInboundSmsHandler: Idle state processing message type 5
+01-01 00:00:31.647   606   734 D CdmaInboundSmsHandler: mWakeLock released
+01-01 00:00:31.647   606   732 D GsmInboundSmsHandler: mWakeLock released
+01-01 00:00:31.659   606   618 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+01-01 00:00:31.693   606   619 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+01-01 00:00:31.745   606   618 D SubscriptionController: [getPhoneId] asked for default subId=-1
+01-01 00:00:32.208   606   939 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+01-01 00:00:36.211   606   606 D DCT     : [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+01-01 00:00:36.731   606   606 D DCT     : [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+01-01 00:00:36.904   606   606 D DCT     : [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+01-01 00:00:36.965   606   606 D DCT     : [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+01-01 00:00:37.196   606   606 D DCT     : [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+01-01 00:00:37.212   606   606 D DCT     : [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+01-01 00:00:37.215   606   606 D DCT     : [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+01-01 00:00:37.235   606   606 D DCT     : [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+01-01 00:00:38.387   606   606 D DCT     : [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+01-01 00:00:38.417   606   606 D DCT     : [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=true
+01-01 00:00:38.426   606   606 D DCT     : [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=true
+01-01 00:00:39.214   606   606 D SubscriptionController: [getPhoneId] asked for default subId=-1
+07-12 09:36:59.195   606   606 D TelephonyNetworkFactory[0]: not releasing - isApp=false, isAct=false NetworkRequest [ REQUEST id=1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+07-12 09:37:06.831   606   618 D SubscriptionController: [getPhoneId] asked for default subId=-1
+07-12 09:37:06.966   606   939 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+07-12 09:37:06.976   606   939 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+07-12 09:37:06.976   606   619 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+07-12 09:37:07.401   606   618 D SubscriptionController: [getPhoneId] asked for default subId=-1
+07-12 09:37:10.458   606   939 D SubscriptionController: [getSlotId]- subId invalid
+07-12 09:37:10.459  1470  1497 D TelephonyManager: getSimState: default sim:-1, all SIMs absent, return state as absent
+07-12 09:37:10.798   606   618 D SubscriptionController: [getSlotId]- subId invalid
+07-12 09:37:10.800  1470  1492 D TelephonyManager: getSimState: default sim:-1, all SIMs absent, return state as absent
+07-12 09:37:10.936   606   619 D SubscriptionController: [getSlotId]- subId invalid
+07-12 09:37:10.936  1470  1491 D TelephonyManager: getSimState: default sim:-1, all SIMs absent, return state as absent
+07-12 09:37:11.061   606   939 D SubscriptionController: [getSlotId]- subId invalid
+07-12 09:37:11.063  1470  1490 D TelephonyManager: getSimState: default sim:-1, all SIMs absent, return state as absent
+07-12 09:37:13.425   606   606 D TelephonyNetworkFactory[0]: got request NetworkRequest [ TRACK_DEFAULT id=8, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ] with score 56
+07-12 09:37:13.485   606   606 D PhoneSwitcher: evaluating due to netRequest
+07-12 09:37:22.371   606   618 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+07-12 09:37:23.620   606   939 D SubscriptionController: [getSlotId]- subId invalid
+07-12 09:37:23.621  1470  1849 D TelephonyManager: getSimState: default sim:-1, all SIMs absent, return state as absent
+07-12 09:37:32.670   606   939 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+07-12 09:37:32.702   606   618 D SubscriptionController: [getSlotId]- subId invalid
+07-12 09:37:32.705  1039  1097 D TelephonyManager: getSimState: default sim:-1, all SIMs absent, return state as absent
+07-12 09:43:30.117   156   470 D AT      : AT< OK
+```
