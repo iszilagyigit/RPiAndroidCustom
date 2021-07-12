@@ -299,3 +299,25 @@ adb logcat -b radio
 07-12 10:02:59.823   606   606 D RilRequest: [3654]< RIL_REQUEST_GET_ACTIVITY_INFO error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
 
 ```
+
+
+```
+07-12 10:06:18.520   606   606 D RILJ    : [3655]> RIL_REQUEST_GET_ACTIVITY_INFO [SUB0]
+07-12 10:06:18.521   606   606 D RilRequest: [3655]< RIL_REQUEST_GET_ACTIVITY_INFO error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+07-12 10:07:51.956   606   606 D PhoneSwitcher: evaluating due to netReleased
+07-12 10:10:16.457   156   470 D AT      : AT< +CREG: 1,FFFE,13EE717
+07-12 10:15:14.886   156   470 D AT      : AT< +CREG: 1,FFFE,13EE735
+
+07-12 10:19:53.427   156   470 D AT      : AT< +CREG: 1,E332,5C4
+07-12 10:19:56.406   156   470 D AT      : AT< RING
+07-12 10:20:02.407   156   470 D AT      : AT< RING
+07-12 10:20:08.408   156   470 D AT      : AT< RING
+07-12 10:20:09.134   156   470 D AT      : AT< MISSED_CALL: 00:44AM +4915150733468
+07-12 10:20:10.014   156   470 D AT      : AT< +CREG: 1,FFFE,13EE717
+07-12 10:20:13.253   156   470 D AT      : AT< +CREG: 1,FFFE,13EE72B
+07-12 10:20:19.233   156   470 D AT      : atchannel: EOF reached
+07-12 10:20:19.234   156   470 I RIL     : AT channel closed
+07-12 10:20:19.234   156   470 D RIL     : setRadioState(1)
+07-12 10:20:19.234   156   165 I RIL     : Re-opening after close
+```
+
