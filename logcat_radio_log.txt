@@ -291,3 +291,11 @@ adb logcat -b radio
 07-12 09:37:32.705  1039  1097 D TelephonyManager: getSimState: default sim:-1, all SIMs absent, return state as absent
 07-12 09:43:30.117   156   470 D AT      : AT< OK
 ```
+
+```
+
+07-12 10:02:42.627   606   939 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+07-12 10:02:59.818   606   606 D RILJ    : [3654]> RIL_REQUEST_GET_ACTIVITY_INFO [SUB0]
+07-12 10:02:59.823   606   606 D RilRequest: [3654]< RIL_REQUEST_GET_ACTIVITY_INFO error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+
+```
