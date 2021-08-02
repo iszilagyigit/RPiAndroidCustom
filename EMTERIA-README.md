@@ -18,6 +18,17 @@ See: https://help.emteria.com/kb/devices-rpi-3
  -- Enable ADB over ethernet
  -- Enable integrated SSH server
 
+------------------------------------
+
+Kernel clone and compile
+
+https://github.com/iszilagyigit/kernel_brcm_rpi  (tree/v5.10.33-q/arch/arm64)
+
+make O=build ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- bcm2711_aosp11_defconfig
+make O=build -j6 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs
+(gzip -9 Image)
+
+
 
 
 
