@@ -2,11 +2,11 @@ EMTERIA https://emteria.com/
 (RTANdroid replacement) after installation (5min) 
 makes a clean and good first impression!
 
-See: https://help.emteria.com/kb/devices-rpi-3
+See: https://about.emteria.com/emteria-os-for-raspberry-pi-4b/
 
 ## Hardware
 
-- Raspberry PI3 
+- Raspberry PI4 
 - 7" Official touch screen
 - Ublox NEO 6M-GPS Modul GY-GPS6MV2 UART
 
@@ -24,9 +24,16 @@ Kernel clone and compile
 
 https://github.com/iszilagyigit/kernel_brcm_rpi  (tree/v5.10.33-q/arch/arm64)
 
-make O=build ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- bcm2711_aosp11_defconfig
-make O=build -j6 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs
+Cross Compiler:
+$sudo apt-get install gcc-aarch64-linux-gnu
+(cross compiler für ARM64  BCM2711 - RPI4) 
+
+$make O=build ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- bcm2711_aosp11_defconfig
+$make O=build -j6 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs
 (gzip -9 Image)
+
+
+
 
 
 
