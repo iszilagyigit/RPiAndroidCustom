@@ -25,16 +25,16 @@ Kernel clone and compile
 https://github.com/iszilagyigit/kernel_brcm_rpi  (tree/v5.10.33-q/arch/arm64)
 
 Cross Compiler:
+```
 $sudo apt-get install gcc-aarch64-linux-gnu
 (cross compiler für ARM64  BCM2711 - RPI4) 
+```
 
+```
 $make O=build ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- bcm2711_aosp11_defconfig
 $make O=build -j6 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs
 (gzip -9 Image)
-
-
-
-
+```
 
 
 
