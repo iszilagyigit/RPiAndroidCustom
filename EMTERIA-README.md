@@ -168,6 +168,15 @@ Environment size: 4182/16380 bytes
 U-Boot> 
 
 ```
+(!) For booting with a Serial GPS Sensor connected to Pins 14,15 disable U-Boot boot delay:
+
+```
+u-boot> setenv bootdelay -2
+u-boot> saveenv
+```
+
+
+
 
 
 
