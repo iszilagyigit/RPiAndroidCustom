@@ -59,7 +59,7 @@ GP Header: Size a000014 LoadAddr 1f2003d5
 ```
 U-Boot Quelle: https://github.com/emteria/external_u-boot_rpi.git
 
-Boot log (serial with ftdi):
+Boot log (serial with ftdi - GND, TX, RX connected):
 ```
 
 U-Boot 2020.04-rc3-00389-g2414bbb7aba2 (Mar 15 2021 - 17:18:31 +0100)
