@@ -59,5 +59,50 @@ GP Header: Size a000014 LoadAddr 1f2003d5
 ```
 U-Boot Quelle: https://github.com/emteria/external_u-boot_rpi.git
 
+Boot log (serial with ftdi):
+```
+
+U-Boot 2020.04-rc3-00389-g2414bbb7aba2 (Mar 15 2021 - 17:18:31 +0100)
+
+DRAM:  3.9 GiB
+RPI 4 Model B (0xc03111)
+MMC:   sdhci_setup_cfg: Your controller doesn't support SDMA!!
+sdhci_setup_cfg: Your controller doesn't support SDMA!!
+mmcnr@7e300000 - probe failed: -22
+sdhci_setup_cfg: Your controller doesn't support SDMA!!
+
+Loading Environment from FAT... *** Warning - bad CRC, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+Net:   eth0: ethernet@7d580000
+starting USB...
+No working controllers found
+Hit any key to stop autoboot:  2  1  0 
+1764 bytes read in 22 ms (78.1 KiB/s)
+## Executing script at 03000000
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+## Warning: defaulting to text format
+## Info: input data size = 865 = 0x361
+1931759 bytes read in 119 ms (15.5 MiB/s)
+14460172 bytes read in 750 ms (18.4 MiB/s)
+Uncompressed size: 32033280 = 0x1E8CA00
+## Loading init Ramdisk from Legacy Image at 02700000 ...
+   Image Name:   
+   Image Type:   AArch64 Linux RAMDisk Image (gzip compressed)
+   Data Size:    1931695 Bytes = 1.8 MiB
+   Load Address: 00000000
+   Entry Point:  00000000
+   Verifying Checksum ... OK
+## Flattened Device Tree blob at 2eff3900
+   Booting using the fdt blob at 0x2eff3900
+   Using Device Tree in place at 000000002eff3900, end 000000002f002f89
+
+Starting kernel ...
+```
+
+
 
 
