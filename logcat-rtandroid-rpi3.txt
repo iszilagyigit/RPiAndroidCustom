@@ -1,0 +1,421 @@
+
+```
+--------- beginning of system
+01-01 00:00:01.883   119   119 I vold    : Vold 3.0 (the awakening) firing up
+01-01 00:00:01.884   119   119 V vold    : Detected support for: ext4 f2fs vfat
+01-01 00:00:02.164   119   132 D vold    : e4crypt_init_user0
+01-01 00:00:02.164   119   132 D vold    : e4crypt_prepare_user_storage for volume null, user 0, serial 0, flags 1
+01-01 00:00:02.164   119   132 D vold    : Preparing: /data/system/users/0
+01-01 00:00:02.167   119   132 D vold    : Preparing: /data/misc/profiles/cur/0
+01-01 00:00:02.168   119   132 D vold    : Preparing: /data/misc/profiles/cur/0/foreign-dex
+01-01 00:00:02.168   119   132 D vold    : Preparing: /data/system_de/0
+01-01 00:00:02.169   119   132 D vold    : Preparing: /data/misc_de/0
+01-01 00:00:02.169   119   132 D vold    : Preparing: /data/user_de/0
+01-01 00:00:02.171   119   132 D vold    : e4crypt_unlock_user_key 0 serial=0 token_present=0
+01-01 00:00:02.787   139   168 W SchedPolicy: add_tid_to_cgroup failed to write '168' (Invalid argument); fd=7
+01-01 00:00:11.422   448   448 I InstallerConnection: connecting...
+01-01 00:00:11.459   448   448 I InstallerConnection: disconnecting...
+01-01 00:00:11.632   448   448 W SystemServer: System clock is before 1970; setting to 1970.
+01-01 00:00:11.644   448   448 I SystemServer: Entered the Android system server!
+01-01 00:00:12.057   448   448 I SystemServiceManager: Starting com.android.server.pm.Installer
+01-01 00:00:12.077   448   448 I Installer: Waiting for installd to be ready.
+01-01 00:00:12.077   448   448 I InstallerConnection: connecting...
+01-01 00:00:12.078   448   448 I SystemServiceManager: Starting com.android.server.am.ActivityManagerService$Lifecycle
+01-01 00:00:12.175   448   448 I ActivityManager: Memory class: 80
+01-01 00:00:12.178   448   462 I ServiceThread: Enabled StrictMode logging for ActivityManager looper.
+01-01 00:00:12.190   448   463 I ServiceThread: Enabled StrictMode logging for android.ui looper.
+01-01 00:00:12.271   448   448 D BatteryStatsImpl: Reading daily items from /data/system/batterystats-daily.xml
+01-01 00:00:12.687   448   448 I IntentFirewall: Read new rules (A:0 B:0 S:0)
+01-01 00:00:12.700   448   469 I ServiceThread: Enabled StrictMode logging for android.display looper.
+01-01 00:00:12.708   448   448 D AppOps  : AppOpsService published
+01-01 00:00:12.710   448   448 I SystemServiceManager: Starting com.android.server.power.PowerManagerService
+01-01 00:00:12.723   448   471 I ServiceThread: Enabled StrictMode logging for PowerManagerService looper.
+01-01 00:00:12.741   448   448 I SystemServiceManager: Starting com.android.server.lights.LightsService
+01-01 00:00:12.753   448   448 I SystemServiceManager: Starting com.android.server.display.DisplayManagerService
+01-01 00:00:12.768   448   448 I SystemServiceManager: Starting phase 100
+01-01 00:00:12.786   448   469 I DisplayManagerService: Display device added: DisplayDeviceInfo{"Built-in Screen": uniqueId="local:0", 800 x 480, modeId 1, defaultModeId 1, supportedModes [{id=1, width=800, height=480, fps=60.
+000004}], colorMode 0, supportedColorModes [0], HdrCapabilities android.view.Display$HdrCapabilities@a69d6308, density 213, 93.0 x 89.0 dpi, appVsyncOff 1000000, presDeadline 16666666, touch INTERNAL, rotation 0, type BUILT_IN
+, state UNKNOWN, FLAG_DEFAULT_DISPLAY, FLAG_ROTATES_WITH_CONTENT, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS}
+01-01 00:00:12.787   448   448 I SystemServer: StartPackageManagerService
+01-01 00:00:12.787   448   469 I DisplayManagerService: Display device changed state: "Built-in Screen", ON
+01-01 00:00:13.006   448   448 D SELinuxMMAC: Using policy file /system/etc/security/mac_permissions.xml
+01-01 00:00:13.544   448   448 W PackageManager: Library not found: /system/framework/org.apache.http.legacy.jar
+01-01 00:00:13.565   448   448 W PackageManager: Failed to parse /system/framework/arm: Missing base APK in /system/framework/arm
+01-01 00:00:13.630   448   448 W PackageManager: Failed to parse /system/framework/oat: Missing base APK in /system/framework/oat
+01-01 00:00:13.763   448   448 W PackageParser: No actions in intent filter at /system/priv-app/Contacts/Contacts.apk Binary XML file line #409
+01-01 00:00:13.891   448   448 W PackageParser: No actions in intent filter at /system/priv-app/Dialer/Dialer.apk Binary XML file line #186
+01-01 00:00:13.954   448   448 W PackageManager: Permission android.permission.DOWNLOAD_WITHOUT_NOTIFICATION from package com.android.providers.downloads in an unknown group android.permission-group.NETWORK
+01-01 00:00:14.349   448   448 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.USE_CREDENTIALS in package: com.android.settings at: Binary XML file line #53
+01-01 00:00:14.350   448   448 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.READ_SYNC_SETTINGS in package: com.android.settings at: Binary XML file line #58
+01-01 00:00:14.350   448   448 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.WRITE_SYNC_SETTINGS in package: com.android.settings at: Binary XML file line #59
+01-01 00:00:14.499   448   448 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INSTALL_GRANT_RUNTIME_PERMISSIONS in package: com.android.shell at: Binary XML file line #102
+01-01 00:00:14.634   448   448 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.CONFIGURE_WIFI_DISPLAY in package: com.android.systemui at: Binary XML file line #123
+01-01 00:00:15.055   448   448 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: com.google.android.providers.gsf.permission.READ_GSERVICES in package: com.google.android.partnersetup at: Binary XML
+file line #32
+01-01 00:00:15.074   448   448 W PackageManager: Package com.google.android.ext.services library android.ext.services already exists; skipping
+01-01 00:00:15.117   448   448 W PackageParser: Unknown element under <manifest>: uses-library at /system/priv-app/GoogleFeedback/GoogleFeedback.apk Binary XML file line #33
+01-01 00:00:15.516   448   448 W PackageManager: Failed to parse /system/priv-app/PrebuiltGmsCore: Package com.google.android.gms at /system/priv-app/PrebuiltGmsCore ignored: updated version 10298430 better than this 10297434
+
+01-01 00:00:15.592   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.ALL_SERVICES from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.OTHER_SERVICES from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.mail from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.cl from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.android from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.androidsecure from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.sierra from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.sierraqa from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.sierrasandbox from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.youtube from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.YouTubeUser from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.talk from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.ig from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.lh2 from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.mobile from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.cp from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.adsense from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.adwords from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.blogger from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.dodgeball from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.gbase from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.groups2 from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.health from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.jotspot from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.knol from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.news from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.orkut from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.print from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.sitemaps from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.wifi from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.finance from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.local from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.593   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.ah from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.594   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.notebook from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.594   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.writely from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.594   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.wise from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.594   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.grandcentral from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.594   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.speechpersonalization from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.594   448   448 W PackageManager: Permission com.google.android.googleapps.permission.GOOGLE_AUTH.speech from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.594   448   448 W PackageManager: Permission com.google.android.providers.talk.permission.READ_ONLY from package com.google.android.gsf in an unknown group android.permission-group.MESSAGES
+01-01 00:00:15.594   448   448 W PackageManager: Permission com.google.android.providers.talk.permission.WRITE_ONLY from package com.google.android.gsf in an unknown group android.permission-group.MESSAGES
+01-01 00:00:15.594   448   448 W PackageManager: Permission com.google.android.gtalkservice.permission.GTALK_SERVICE from package com.google.android.gsf in an unknown group android.permission-group.MESSAGES
+01-01 00:00:15.594   448   448 W PackageManager: Permission com.google.android.gtalkservice.permission.SEND_HEARTBEAT from package com.google.android.gsf in an unknown group android.permission-group.NETWORK
+01-01 00:00:15.594   448   448 W PackageManager: Permission com.google.android.permission.BROADCAST_DATA_MESSAGE from package com.google.android.gsf in an unknown group android.permission-group.NETWORK
+01-01 00:00:15.594   448   448 W PackageManager: Permission com.google.android.c2dm.permission.SEND from package com.google.android.gsf in an unknown group android.permission-group.NETWORK
+01-01 00:00:15.594   448   448 W PackageManager: Permission com.google.android.c2dm.permission.RECEIVE from package com.google.android.gsf in an unknown group android.permission-group.NETWORK
+01-01 00:00:15.594   448   448 W PackageManager: Permission com.google.android.xmpp.permission.BROADCAST from package com.google.android.gsf in an unknown group android.permission-group.NETWORK
+01-01 00:00:15.594   448   448 W PackageManager: Permission com.google.android.xmpp.permission.SEND_RECEIVE from package com.google.android.gsf in an unknown group android.permission-group.NETWORK
+01-01 00:00:15.594   448   448 W PackageManager: Permission com.google.android.xmpp.permission.XMPP_ENDPOINT_BROADCAST from package com.google.android.gsf in an unknown group android.permission-group.NETWORK
+01-01 00:00:15.594   448   448 W PackageManager: Permission com.google.android.xmpp.permission.USE_XMPP_ENDPOINT from package com.google.android.gsf in an unknown group android.permission-group.NETWORK
+01-01 00:00:15.594   448   448 W PackageManager: Permission com.google.android.providers.gsf.permission.READ_GSERVICES from package com.google.android.gsf in an unknown group android.permission-group.ACCOUNTS
+01-01 00:00:15.836   448   448 W PackageManager: Failed to parse /system/priv-app/Phonesky: Package com.android.vending at /system/priv-app/Phonesky ignored: updated version 82631610 better than this 80750800
+01-01 00:00:15.889   448   448 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.READ_CONTACTS in package: com.android.bluetooth at: Binary XML file line #61
+01-01 00:00:15.893   448   448 W PackageParser: No actions in intent filter at /system/app/Bluetooth/Bluetooth.apk Binary XML file line #222
+01-01 00:00:15.970   448   448 W PackageParser: No actions in intent filter at /system/app/CMFileManager/CMFileManager.apk Binary XML file line #166
+01-01 00:00:16.017   448   448 W PackageManager: Non-privileged app; cap priority to 0; package: com.android.calendar activity: com.android.calendar.GoogleCalendarUriIntentFilter origPrio: 50
+01-01 00:00:16.095   448   448 W PackageManager: Non-privileged app; cap priority to 0; package: com.android.cts.ctsshim activity: com.android.cts.ctsshim.InstallPriority origPrio: 100
+01-01 00:00:16.095   448   448 W PackageManager: Non-privileged app; cap priority to 0; package: com.android.cts.ctsshim activity: com.android.cts.ctsshim.InstallPriority origPrio: 100
+01-01 00:00:16.096   448   448 W PackageManager: Non-privileged app; cap priority to 0; package: com.android.cts.ctsshim activity: com.android.cts.ctsshim.InstallPriority origPrio: 100
+01-01 00:00:16.096   448   448 W PackageManager: Non-privileged app; cap priority to 0; package: com.android.cts.ctsshim activity: com.android.cts.ctsshim.InstallPriority origPrio: 100
+01-01 00:00:16.096   448   448 W PackageManager: Non-privileged app; cap priority to 0; package: com.android.cts.ctsshim activity: com.android.cts.ctsshim.InstallPriority origPrio: 100
+01-01 00:00:16.224   448   448 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.WRITE_CONTACTS in package: com.android.email at: Binary XML file line #40
+01-01 00:00:16.297   448   448 W PackageParser: Unknown element under <application>: permission at /system/app/Gallery2/Gallery2.apk Binary XML file line #238
+01-01 00:00:16.297   448   448 W PackageParser: Unknown element under <application>: permission at /system/app/Gallery2/Gallery2.apk Binary XML file line #241
+01-01 00:00:16.495   448   448 W PackageManager: Permission com.android.launcher3.permission.READ_SETTINGS from package com.android.launcher3 in an unknown group android.permission-group.SYSTEM_TOOLS
+01-01 00:00:16.495   448   448 W PackageManager: Permission com.android.launcher3.permission.WRITE_SETTINGS from package com.android.launcher3 in an unknown group android.permission-group.SYSTEM_TOOLS
+01-01 00:00:16.495   448   448 W PackageManager: Permission com.android.launcher.permission.INSTALL_SHORTCUT from package com.android.launcher3 in an unknown group android.permission-group.SYSTEM_TOOLS
+01-01 00:00:16.912   448   448 W PackageManager: Failed to parse /system/app/GoogleTTS: Package com.google.android.tts at /system/app/GoogleTTS ignored: updated version 210311121 better than this 210310101
+01-01 00:00:16.998   448   448 W PackageManager: Package com.google.android.ext.shared library android.ext.shared already exists; skipping
+01-01 00:00:18.645   448   448 W PackageParser: Unknown element under <manifest>: queries at /data/app/com.android.vending-1/base.apk Binary XML file line #372
+01-01 00:00:18.707   448   448 W PackageManager: Permission com.android.vending.appdiscoveryservice.permission.ACCESS_APP_DISCOVERY_SERVICE from package com.android.vending in an unknown group android.permission-group.NETWORK
+
+01-01 00:00:18.707   448   448 W PackageManager: Permission com.android.vending.CHECK_LICENSE from package com.android.vending in an unknown group android.permission-group.NETWORK
+01-01 00:00:18.707   448   448 W PackageManager: Permission com.android.vending.BILLING from package com.android.vending in an unknown group android.permission-group.NETWORK
+01-01 00:00:18.707   448   448 W PackageManager: Permission com.android.vending.p2p.APP_INSTALL_API from package com.android.vending in an unknown group android.permission-group.NETWORK
+01-01 00:00:19.067   448   448 W PackageManager: Package com.google.android.gms desires unavailable shared library com.google.android.ble; ignoring!
+01-01 00:00:19.346   448   448 W PackageManager: Permission com.google.android.gms.permission.ACTIVITY_RECOGNITION from package com.google.android.gms in an unknown group android.permission-group.PERSONAL_INFO
+01-01 00:00:19.747   448   448 E PackageManager: There should probably be exactly one setup wizard; found 2: matches=[ResolveInfo{70a62a5 com.google.android.setupwizard/.SetupWizardActivity p=5 m=0x108000}, ResolveInfo{a18767a
+ com.android.provision/.DefaultActivity p=1 m=0x108000}]
+01-01 00:00:19.747   448   448 W PackageManager: Protected action; cap priority to 0; package: com.android.cts.priv.ctsshim activity: com.android.cts.priv.ctsshim.InstallPriority origPrio: 100
+01-01 00:00:19.747   448   448 W PackageManager: Protected action; cap priority to 0; package: com.android.cts.priv.ctsshim activity: com.android.cts.priv.ctsshim.InstallPriority origPrio: 100
+01-01 00:00:19.747   448   448 W PackageManager: Protected action; cap priority to 0; package: com.android.cts.priv.ctsshim activity: com.android.cts.priv.ctsshim.InstallPriority origPrio: 100
+01-01 00:00:19.747   448   448 W PackageManager: Protected action; cap priority to 0; package: com.android.cts.priv.ctsshim activity: com.android.cts.priv.ctsshim.InstallPriority origPrio: 100
+01-01 00:00:19.747   448   448 W PackageManager: Protected action; cap priority to 0; package: com.google.android.setupwizard activity: com.google.android.setupwizard.util.WebDialogActivity origPrio: 5
+01-01 00:00:19.747   448   448 W PackageManager: Protected action; cap priority to 0; package: com.google.android.setupwizard activity: com.google.android.setupwizard.util.SecureInterceptActivity origPrio: 5
+01-01 00:00:19.747   448   448 W PackageManager: Protected action; cap priority to 0; package: com.google.android.setupwizard activity: com.google.android.setupwizard.util.SecureInterceptActivity origPrio: 5
+01-01 00:00:19.748   448   448 W PackageManager: Package com.google.android.gms desires unavailable shared library com.google.android.ble; ignoring!
+01-01 00:00:19.748   448   448 I PackageManager: Adjusting ABI for com.android.providers.downloads to armeabi-v7a (requirer=com.android.mtp, scannedPackage=null)
+01-01 00:00:19.750   448   448 I PackageManager: Adjusting ABI for com.android.providers.downloads.ui to armeabi-v7a (requirer=com.android.mtp, scannedPackage=null)
+01-01 00:00:19.751   448   448 I PackageManager: Adjusting ABI for com.android.providers.media to armeabi-v7a (requirer=com.android.mtp, scannedPackage=null)
+01-01 00:00:19.751   448   448 I PackageManager: Adjusting ABI for com.google.android.gsf.login to armeabi-v7a (requirer=com.google.android.gms, scannedPackage=null)
+01-01 00:00:19.752   448   448 I PackageManager: Adjusting ABI for com.google.android.backuptransport to armeabi-v7a (requirer=com.google.android.gms, scannedPackage=null)
+01-01 00:00:19.753   448   448 I PackageManager: Adjusting ABI for com.google.android.gsf to armeabi-v7a (requirer=com.google.android.gms, scannedPackage=null)
+01-01 00:00:19.754   448   448 I PackageManager: Adjusting ABI for com.android.providers.settings to armeabi-v7a (requirer=android, scannedPackage=null)
+01-01 00:00:19.755   448   448 I PackageManager: Adjusting ABI for com.android.inputdevices to armeabi-v7a (requirer=android, scannedPackage=null)
+01-01 00:00:19.756   448   448 I PackageManager: Adjusting ABI for com.android.wallpaperbackup to armeabi-v7a (requirer=android, scannedPackage=null)
+01-01 00:00:19.757   448   448 I PackageManager: Adjusting ABI for com.android.server.telecom to armeabi-v7a (requirer=android, scannedPackage=null)
+01-01 00:00:19.758   448   448 I PackageManager: Adjusting ABI for com.android.keychain to armeabi-v7a (requirer=android, scannedPackage=null)
+01-01 00:00:19.759   448   448 I PackageManager: Adjusting ABI for com.android.settings to armeabi-v7a (requirer=android, scannedPackage=null)
+01-01 00:00:19.759   448   448 I PackageManager: Adjusting ABI for com.android.location.fused to armeabi-v7a (requirer=android, scannedPackage=null)
+01-01 00:00:19.760   448   448 I PackageManager: Adjusting ABI for rtandroid.core to armeabi-v7a (requirer=android, scannedPackage=null)
+01-01 00:00:19.770   448   448 I PackageManager: Time to scan packages: 6.295 seconds
+01-01 00:00:19.772   448   448 W PackageManager: Not granting permission com.google.android.googleapps.permission.GOOGLE_AUTH to package com.android.providers.calendar (protectionLevel=2 flags=0x30083e45)
+01-01 00:00:19.772   448   448 W PackageManager: Not granting permission com.google.android.googleapps.permission.GOOGLE_AUTH.cl to package com.android.providers.calendar (protectionLevel=2 flags=0x30083e45)
+01-01 00:00:19.773   448   448 W PackageManager: Not granting permission android.permission.GLOBAL_SEARCH to package com.android.quicksearchbox (protectionLevel=18 flags=0x3808be45)
+01-01 00:00:19.773   448   448 W PackageManager: Unknown permission android.permission.READ_DEVICE_CONFIG in package com.android.vending
+01-01 00:00:19.774   448   448 W PackageManager: Unknown permission android.permission.WRITE_DEVICE_CONFIG in package com.android.vending
+01-01 00:00:19.774   448   448 W PackageManager: Unknown permission android.permission.BLUETOOTH_SCAN in package com.android.vending
+01-01 00:00:19.774   448   448 W PackageManager: Unknown permission android.permission.BLUETOOTH_ADVERTISE in package com.android.vending
+01-01 00:00:19.774   448   448 W PackageManager: Unknown permission android.permission.BLUETOOTH_CONNECT in package com.android.vending
+01-01 00:00:19.774   448   448 W PackageManager: Not granting permission android.permission.READ_PRIVILEGED_PHONE_STATE to package com.android.vending (protectionLevel=18 flags=0x284abec5)
+01-01 00:00:19.774   448   448 W PackageManager: Not granting permission android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS to package com.android.vending (protectionLevel=2 flags=0x284abec5)
+01-01 00:00:19.774   448   448 W PackageManager: Unknown permission android.permission.USE_BIOMETRIC in package com.android.vending
+01-01 00:00:19.774   448   448 W PackageManager: Unknown permission com.google.android.setupwizard.SETUP_PROGRESS_SERVICE in package com.android.vending
+01-01 00:00:19.774   448   448 I PackageManager: Un-granting permission android.permission.INSTALL_GRANT_RUNTIME_PERMISSIONS from package com.android.vending (protectionLevel=770 flags=0x284abec5)
+01-01 00:00:19.774   448   448 I PackageManager: Un-granting permission android.permission.GRANT_RUNTIME_PERMISSIONS from package com.android.vending (protectionLevel=770 flags=0x284abec5)
+01-01 00:00:19.775   448   448 I PackageManager: Un-granting permission android.permission.REVOKE_RUNTIME_PERMISSIONS from package com.android.vending (protectionLevel=770 flags=0x284abec5)
+01-01 00:00:19.775   448   448 W PackageManager: Not granting permission android.permission.BACKUP to package com.android.vending (protectionLevel=18 flags=0x284abec5)
+01-01 00:00:19.775   448   448 W PackageManager: Unknown permission android.permission.ALLOCATE_AGGRESSIVE in package com.android.vending
+01-01 00:00:19.777   448   448 W PackageManager: Not granting permission com.google.android.googleapps.permission.GOOGLE_AUTH.mail to package com.android.calendar (protectionLevel=2 flags=0x3009be45)
+01-01 00:00:19.778   448   448 W PackageManager: Unknown permission com.google.android.apps.now.OPT_IN_WIZARD in package com.google.android.setupwizard
+01-01 00:00:19.778   448   448 W PackageManager: Not granting permission android.permission.ACCESS_FINE_LOCATION to package com.chartcross.gpstest because it was previously installed without
+01-01 00:00:19.778   448   448 W PackageManager: Not granting permission android.permission.READ_EXTERNAL_STORAGE to package com.Project100Pi.themusicplayer because it was previously installed without
+01-01 00:00:19.778   448   448 W PackageManager: Not granting permission android.permission.WRITE_EXTERNAL_STORAGE to package com.Project100Pi.themusicplayer because it was previously installed without
+01-01 00:00:19.778   448   448 W PackageManager: Not granting permission android.permission.READ_LOGS to package com.Project100Pi.themusicplayer (protectionLevel=50 flags=0x3818be44)
+01-01 00:00:19.778   448   448 W PackageManager: Not granting permission android.permission.CHANGE_CONFIGURATION to package com.Project100Pi.themusicplayer (protectionLevel=50 flags=0x3818be44)
+01-01 00:00:19.778   448   448 W PackageManager: Not granting permission android.permission.ACCESS_COARSE_LOCATION to package com.Project100Pi.themusicplayer because it was previously installed without
+01-01 00:00:19.779   448   448 W PackageManager: Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.android.onetimeinitializer
+01-01 00:00:19.779   448   448 W PackageManager: Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.android.onetimeinitializer
+01-01 00:00:19.779   448   448 W PackageManager: Not granting permission android.permission.INTERACT_ACROSS_USERS to package com.google.android.syncadapters.contacts (protectionLevel=50 flags=0x38083e45)
+01-01 00:00:19.779   448   448 W PackageManager: Unknown permission com.google.android.syncadapters.contacts.permission.GAL_SEARCH in package com.google.android.syncadapters.contacts
+01-01 00:00:19.780   448   448 W PackageManager: Unknown permission com.google.android.apps.enterprise.dmagent.permission.AutoSyncPermission in package com.google.android.gms
+read: unexpected EOF!
+01-01 00:00:19.780   448   448 W PackageManager: Unknown permission com.google.android.googlequicksearchbox.permission.PAUSE_HOTWORD in package com.google.android.gms
+01-01 00:00:19.780   448   448 W PackageManager: Unknown permission com.google.android.hangouts.START_HANGOUT in package com.google.android.gms
+01-01 00:00:19.780   448   448 W PackageManager: Unknown permission com.google.android.wearable.READ_SETTINGS in package com.google.android.gms
+01-01 00:00:19.781   448   448 W PackageManager: Unknown permission com.google.android.launcher.permission.RECEIVE_LAUNCH_BROADCASTS in package com.google.android.gms
+01-01 00:00:19.781   448   448 W PackageManager: Unknown permission com.google.android.gm.permission.READ_GMAIL in package com.google.android.gms
+01-01 00:00:19.781   448   448 W PackageManager: Unknown permission com.android.launcher.permission.PRELOAD_WORKSPACE in package com.google.android.partnersetup
+01-01 00:00:19.781   448   448 W PackageManager: Unknown permission com.google.android.permission.INSTALL_WEARABLE_PACKAGES in package com.android.packageinstaller
+01-01 00:00:19.788   448   448 V PackageManager: reconcileAppsData for null u0 0x3
+01-01 00:00:20.465   448   448 V PackageManager: reconcileAppsData finished 104 packages
+01-01 00:00:20.675   448   448 V PackageManager: Ephemeral resolver found; pkg: com.google.android.gms, info:ResolveInfo{cdfce2b com.google.android.gms/.chimera.PersistentBoundBrokerService m=0x108000}
+01-01 00:00:20.676   448   448 I PackageManager: Ephemeral activated; resolver: ComponentInfo{com.google.android.gms/com.google.android.gms.chimera.PersistentBoundBrokerService} installer:ComponentInfo{com.google.android.gms/c
+om.google.android.gms.instantapps.routing.EphemeralInstallerActivity}
+01-01 00:00:20.676   448   448 D PackageManager: Set ephemeral installer activity: ComponentInfo{com.google.android.gms/com.google.android.gms.instantapps.routing.EphemeralInstallerActivity}
+01-01 00:00:20.744   448   448 I SystemServer: StartOtaDexOptService
+01-01 00:00:20.749   448   448 I SystemServer: StartUserManagerService
+01-01 00:00:20.749   448   448 I SystemServiceManager: Starting com.android.server.pm.UserManagerService$LifeCycle
+01-01 00:00:20.779   448   448 I SystemServiceManager: Starting com.android.server.BatteryService
+01-01 00:00:20.799   448   448 I SystemServiceManager: Starting com.android.server.usage.UsageStatsService
+01-01 00:00:20.832   448   448 I SystemServiceManager: Starting com.android.server.webkit.WebViewUpdateService
+01-01 00:00:20.851   448   448 I SystemServer: Reading configuration...
+01-01 00:00:20.851   448   448 I SystemServer: StartSchedulingPolicyService
+01-01 00:00:20.853   448   448 I SystemServiceManager: Starting com.android.server.telecom.TelecomLoaderService
+01-01 00:00:20.861   448   448 I SystemServer: StartTelephonyRegistry
+01-01 00:00:20.872   448   448 I SystemServer: StartEntropyMixer
+01-01 00:00:20.883   448   448 I EntropyMixer: Added HW RNG output to entropy pool
+01-01 00:00:20.883   448   448 I EntropyMixer: Writing entropy...
+01-01 00:00:21.431   448   448 I SystemServer: Camera Service
+01-01 00:00:21.439   448   448 I SystemServiceManager: Starting com.android.server.camera.CameraService
+01-01 00:00:21.448   448   476 I ServiceThread: Enabled StrictMode logging for CameraService_proxy looper.
+01-01 00:00:21.450   448   448 I SystemServer: StartAccountManagerService
+01-01 00:00:21.455   448   448 I SystemServiceManager: Starting com.android.server.accounts.AccountManagerService$Lifecycle
+01-01 00:00:21.490   448   448 I SystemServer: StartContentService
+01-01 00:00:21.500   448   448 I SystemServiceManager: Starting com.android.server.content.ContentService$Lifecycle
+01-01 00:00:21.512   448   448 I SystemServer: InstallSystemProviders
+01-01 00:00:21.591   448   448 I SystemServer: StartVibratorService
+01-01 00:00:21.598   448   448 I SystemServer: StartConsumerIrService
+01-01 00:00:21.599   448   448 I SystemServer: StartAlarmManagerService
+01-01 00:00:21.600   448   448 I SystemServiceManager: Starting com.android.server.AlarmManagerService
+01-01 00:00:21.612   448   448 I SystemServer: InitWatchdog
+01-01 00:00:21.613   448   448 I SystemServer: StartInputManagerService
+01-01 00:00:21.621   448   448 I InputManager: Initializing input manager, mUseDevInputEventForAudioJack=false
+01-01 00:00:21.623   448   448 I SystemServer: StartWindowManagerService
+01-01 00:00:21.719   448   469 I WindowManager: No existing display settings /data/system/display_settings.xml; starting empty
+01-01 00:00:21.794   448   448 I SystemServer: StartVrManagerService
+01-01 00:00:21.794   448   448 I SystemServiceManager: Starting com.android.server.vr.VrManagerService
+01-01 00:00:21.810   448   448 I InputManager: Starting input manager
+01-01 00:00:21.816   448   448 I SystemServiceManager: Sta01-01 00:00:19.788   448   448 V PackageManager: reconcileAppsData for null u0 0x3
+01-01 00:00:20.465   448   448 V PackageManager: reconcileAppsData finished 104 packages
+01-01 00:00:20.675   448   448 V PackageManager: Ephemeral resolver found; pkg: com.google.android.gms, info:ResolveInfo{cdfce2b com.google.android.gms/.chimera.PersistentBoundBrokerService m=0x108000}
+01-01 00:00:20.676   448   448 I PackageManager: Ephemeral activated; resolver: ComponentInfo{com.google.android.gms/com.google.android.gms.chimera.PersistentBoundBrokerService} installer:ComponentInfo{com.google.android.gms/c
+om.google.android.gms.instantapps.routing.EphemeralInstallerActivity}
+01-01 00:00:20.676   448   448 D PackageManager: Set ephemeral installer activity: ComponentInfo{com.google.android.gms/com.google.android.gms.instantapps.routing.EphemeralInstallerActivity}
+01-01 00:00:20.744   448   448 I SystemServer: StartOtaDexOptService
+01-01 00:00:20.749   448   448 I SystemServer: StartUserManagerService
+01-01 00:00:20.749   448   448 I SystemServiceManager: Starting com.android.server.pm.UserManagerService$LifeCycle
+01-01 00:00:20.779   448   448 I SystemServiceManager: Starting com.android.server.BatteryService
+01-01 00:00:20.799   448   448 I SystemServiceManager: Starting com.android.server.usage.UsageStatsService
+01-01 00:00:20.832   448   448 I SystemServiceManager: Starting com.android.server.webkit.WebViewUpdateService
+01-01 00:00:20.851   448   448 I SystemServer: Reading configuration...
+01-01 00:00:20.851   448   448 I SystemServer: StartSchedulingPolicyService
+01-01 00:00:20.853   448   448 I SystemServiceManager: Starting com.android.server.telecom.TelecomLoaderService
+01-01 00:00:20.861   448   448 I SystemServer: StartTelephonyRegistry
+01-01 00:00:20.872   448   448 I SystemServer: StartEntropyMixer
+01-01 00:00:20.883   448   448 I EntropyMixer: Added HW RNG output to entropy pool
+01-01 00:00:20.883   448   448 I EntropyMixer: Writing entropy...
+01-01 00:00:21.431   448   448 I SystemServer: Camera Service
+01-01 00:00:21.439   448   448 I SystemServiceManager: Starting com.android.server.camera.CameraService
+01-01 00:00:21.448   448   476 I ServiceThread: Enabled StrictMode logging for CameraService_proxy looper.
+01-01 00:00:21.450   448   448 I SystemServer: StartAccountManagerService
+01-01 00:00:21.455   448   448 I SystemServiceManager: Starting com.android.server.accounts.AccountManagerService$Lifecycle
+01-01 00:00:21.490   448   448 I SystemServer: StartContentService
+01-01 00:00:21.500   448   448 I SystemServiceManager: Starting com.android.server.content.ContentService$Lifecycle
+01-01 00:00:21.512   448   448 I SystemServer: InstallSystemProviders
+01-01 00:00:21.591   448   448 I SystemServer: StartVibratorService
+01-01 00:00:21.598   448   448 I SystemServer: StartConsumerIrService
+01-01 00:00:21.599   448   448 I SystemServer: StartAlarmManagerService
+01-01 00:00:21.600   448   448 I SystemServiceManager: Starting com.android.server.AlarmManagerService
+01-01 00:00:21.612   448   448 I SystemServer: InitWatchdog
+01-01 00:00:21.613   448   448 I SystemServer: StartInputManagerService
+01-01 00:00:21.621   448   448 I InputManager: Initializing input manager, mUseDevInputEventForAudioJack=false
+01-01 00:00:21.623   448   448 I SystemServer: StartWindowManagerService
+01-01 00:00:21.719   448   469 I WindowManager: No existing display settings /data/system/display_settings.xml; starting empty
+01-01 00:00:21.794   448   448 I SystemServer: StartVrManagerService
+01-01 00:00:21.794   448   448 I SystemServiceManager: Starting com.android.server.vr.VrManagerService
+01-01 00:00:21.810   448   448 I InputManager: Starting input manager
+01-01 00:00:21.816   448   448 I SystemServiceManager: Starting com.android.server.BluetoothService
+01-01 00:00:21.834   448   448 D BluetoothManagerService: Loading stored name and address
+01-01 00:00:21.834   448   448 D BluetoothManagerService: Loading stored name and address
+01-01 00:00:23.159   448   448 E ConnectivityService: Ignoring protectedNetwork 14
+01-01 00:00:23.159   448   448 E ConnectivityService: Ignoring protectedNetwork 15
+01-01 00:00:23.179   448   448 I SystemServer: StartNsdService
+01-01 00:00:23.183   448   448 I SystemServer: StartUpdateLockService
+01-01 00:00:23.190   448   448 I SystemServiceManager: Starting com.android.server.RecoverySystemService
+01-01 00:00:23.192   448   448 I SystemServiceManager: Starting com.android.server.notification.NotificationManagerService
+01-01 00:00:23.221   448   448 D ConditionProviders.SCP: new ScheduleConditionProvider()
+01-01 00:00:23.227   448   448 D ZenLog  : config: readXml,ZenModeConfig[user=0,allowCalls=true,allowRepeatCallers=false,allowMessages=false,allowCallsFrom=contacts,allowMessagesFrom=contacts,allowReminders=true,allowEvents=tr
+ue,allowWhenScreenOff=true,allowWhenScreenOn=true,automaticRules={d582a82dc1b24e619237357fef6001bf=ZenRule[enabled=false,snoozing=false,name=Weekend,zenMode=ZEN_MODE_ALARMS,conditionId=condition://android/schedule?days=6.7&sta
+rt=23.30&end=10.0&exitAtAlarm=false,condition=Condition[id=condition://android/schedule?days=6.7&start=23.30&end=10.0&exitAtAlarm=false,summary=...,line1=...,line2=...,icon=0,state=STATE_FALSE,flags=2],component=ComponentInfo{
+android/com.android.server.notification.ScheduleConditionProvider},id=d582a82dc1b24e619237357fef6001bf,creationTime=30319,enabler=null], e8da31c530ba48b5bf6b3581f2e3831a=ZenRule[enabled=false,snoozing=false,name=Weeknight,zenM
+ode=ZEN_MODE_ALARMS,conditionId=condition://android/schedule?days=1.2.3.4.5&start=22.0&end=7.0&exitAtAlarm=false,condition=Condition[id=condition://android/schedule?days=1.2.3.4.5&start=22.0&end=7.0&exitAtAlarm=false,summary=.
+..,line1=...,line2=...,icon=0,state=STATE_TRUE,flags=2],component=ComponentInfo{android/com.android.server.notification.ScheduleConditionProvider},id=e8da31c530ba48b5bf6b3581f2e3831a,creationTime=30319,enabler=null], 009673352
+0a64f3e9d79f9094f20ffc1=ZenRule[enabled=false,snoozing=false,name=Event,zenMode=ZEN_MODE_ALARMS,conditionId=condition://android/event?userId=-10000&calendar=&reply=1,condition=Condition[id=condition://android/event?userId=-100
+00&calendar=&reply=1,summary=...,line1=...,line2=...,icon=0,state=STATE_FALSE,flags=2],component=ComponentInfo{android/com.android.server.notification.EventConditionProvider},id=0096733520a64f3e9d79f9094f20ffc1,creationTime=30
+319,enabler=null]},manualRule=null],Diff[automaticRule[d582a82dc1b24e619237357fef6001bf]:insert,automaticRule[b4ffa7baa9eb4e1fa60881c0351dddec]:delete,automaticRule[e8da31c530ba48b5bf6b3581f2e3831a]:insert,automaticRule[2319fc
+d8bb904329b889f20e3e6f1dc7]:delete,automaticRule[b37a2a0e88914142bf86707e005beade]:delete,automaticRule[0096733520a64f3e9d79f9094f20ffc1]:insert]
+01-01 00:00:23.240   448   448 D ZenLog  : set_zen_mode: off,init
+01-01 00:00:23.244   448   448 I SystemServiceManager: Starting com.android.server.storage.DeviceStorageMonitorService
+01-01 00:00:23.254   448   448 I SystemServer: StartLocationManagerService
+01-01 00:00:23.262   448   448 I SystemServer: StartCountryDetectorService
+01-01 00:00:23.265   448   448 I SystemServer: StartSearchManagerService
+01-01 00:00:24.762   448   448 D ZenLog  : subscribe: condition://android/schedule?days=1.2.3.4.5&start=22.0&end=7.0&exitAtAlarm=false,ok
+01-01 00:00:24.762   448   448 D ConditionProviders: Subscribing to condition://android/event?userId=-10000&calendar=&reply=1 with ComponentInfo{android/com.android.server.notification.EventConditionProvider}
+01-01 00:00:24.762   448   448 D ZenLog  : subscribe: condition://android/event?userId=-10000&calendar=&reply=1,ok
+01-01 00:00:24.877   448   463 W WindowManager: Keyguard drawn timeout. Setting mKeyguardDrawComplete
+01-01 00:00:25.292   448   448 D ZenLog  : set_zen_mode: off,cleanUpZenRules
+01-01 00:00:25.572   448   465 E BatteryStatsService: no controller energy info supplied
+01-01 00:00:25.573   448   465 E KernelCpuSpeedReader: Failed to read cpu-freq: /sys/devices/system/cpu/cpu0/cpufreq/stats/time_in_state (No such file or directory)
+01-01 00:00:25.574   448   465 E KernelUidCpuTimeReader: Failed to read uid_cputime: /proc/uid_cputime/show_uid_stat (No such file or directory)
+01-01 00:00:25.576   448   465 E KernelWakelockReader: neither /proc/wakelocks nor /d/wakeup_sources exists
+01-01 00:00:25.577   448   465 W BatteryStatsImpl: Couldn't get kernel wake lock stats
+01-01 00:00:25.591   448   465 E BatteryStatsService: no controller energy info supplied
+01-01 00:00:25.592   448   465 E KernelCpuSpeedReader: Failed to read cpu-freq: /sys/devices/system/cpu/cpu0/cpufreq/stats/time_in_state (No such file or directory)
+01-01 00:00:25.592   448   465 E KernelUidCpuTimeReader: Failed to read uid_cputime: /proc/uid_cputime/show_uid_stat (No such file or directory)
+01-01 00:00:25.594   448   465 E KernelWakelockReader: neither /proc/wakelocks nor /d/wakeup_sources exists
+01-01 00:00:25.595   448   465 W BatteryStatsImpl: Couldn't get kernel wake lock stats
+01-01 00:00:25.772   519   519 V FingerprintManager: FingerprintManagerService was null
+01-01 00:00:25.794   448   448 D BluetoothManagerService: Trying to bind to profile: 1, while Bluetooth was disabled
+01-01 00:00:25.799   448   468 D BluetoothManagerService: Message: 30
+01-01 00:00:25.814   448   448 I Telecom : SystemStateProvider: Registering car mode receiver: android.content.IntentFilter@19a9cb4: TS.init@AAA
+01-01 00:00:25.863   448   658 I Telecom : CallAudioModeStateMachine: Message received: null.: TS.init->CAMSM.pM_1@AAA_0
+01-01 00:00:25.865   448   657 I Telecom : Telecom: Non-call EVENT: AUDIO_ROUTE, Entering state QuiescentEarpieceRoute
+01-01 00:00:25.869   448   659 E ActivityThread: Failed to find provider info for call_log
+01-01 00:00:25.872   448   448 D BluetoothManagerService: Trying to bind to profile: 1, while Bluetooth was disabled
+01-01 00:00:25.872   448   468 D BluetoothManagerService: Message: 30
+01-01 00:00:25.879   448   448 I Telecom : Class: TelecomSystem.INSTANCE being set
+01-01 00:00:25.880   448   448 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1357 android.content.ContextWrapper.startService:613 com.android.server.teleco
+m.components.TelecomService.initializeTelecomSystem:176 com.android.server.telecom.components.TelecomService.onBind:61 android.app.ActivityThread.handleBindService:3218
+01-01 00:00:25.882   448   448 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1357 com.android.server.content.SyncManager$13.run:658 android.os.Handler.hand
+leCallback:751 android.os.Handler.dispatchMessage:95 android.os.Looper.loop:154
+01-01 00:00:25.929   448   448 V WiredAccessoryManager: init()
+01-01 00:00:26.058   448   462 W KeyguardServiceDelegate: onScreenTurningOn(): no keyguard service!
+01-01 00:00:26.075   448   448 D ConditionProviders.SCP: onSubscribe condition://android/schedule?days=6.7&start=23.30&end=10.0&exitAtAlarm=false
+01-01 00:00:26.077   448   448 D ConditionProviders.SCP: setRegistered true
+01-01 00:00:26.078   448   448 D ConditionProviders.SCP: notifyCondition condition://android/schedule?days=6.7&start=23.30&end=10.0&exitAtAlarm=false STATE_FALSE reason=!meetsSchedule
+01-01 00:00:26.080   448   448 D ConditionProviders.SCP: Scheduling evaluate for Thu Jan 01 10:00:00 GMT+00:00 1970 (36000000), in +9h59m33s923ms, now=Thu Jan 01 00:00:26 GMT+00:00 1970 (26077)
+01-01 00:00:26.080   448   448 D ConditionProviders.SCP: onSubscribe condition://android/schedule?days=1.2.3.4.5&start=22.0&end=7.0&exitAtAlarm=false
+01-01 00:00:26.081   448   448 D ConditionProviders.SCP: notifyCondition condition://android/schedule?days=6.7&start=23.30&end=10.0&exitAtAlarm=false STATE_FALSE reason=!meetsSchedule
+01-01 00:00:26.081   448   448 D ConditionProviders.SCP: notifyCondition condition://android/schedule?days=1.2.3.4.5&start=22.0&end=7.0&exitAtAlarm=false STATE_TRUE reason=meetsSchedule
+01-01 00:00:26.082   448   448 D ConditionProviders.SCP: Scheduling evaluate for Thu Jan 01 07:00:00 GMT+00:00 1970 (25200000), in +6h59m33s919ms, now=Thu Jan 01 00:00:26 GMT+00:00 1970 (26081)
+01-01 00:00:26.093   448   503 E ActivityThread: Failed to find provider info for com.android.calendar
+01-01 00:00:26.093   448   503 E ActivityThread: Failed to find provider info for com.android.calendar
+01-01 00:00:26.119   514   684 E ActivityThread: Failed to find provider info for user_dictionary
+01-01 00:00:26.141   448   448 I Telecom : WiredHeadsetManager: ACTION_HEADSET_PLUG event, plugged in: false, : WHC.oADA@AAE
+01-01 00:00:26.146   448   448 I ActivityManager: user 0 is still locked. Cannot load recents
+01-01 00:00:26.162   448   461 I SyncManager: Got SyncJobService instance.
+01-01 00:00:26.360   448   462 I ActivityManager: Start proc 706:com.android.cellbroadcastreceiver/u0a4 for broadcast com.android.cellbroadcastreceiver/.CellBroadcastReceiver
+01-01 00:00:26.526   448   497 D ConnectivityService: Got NetworkFactory Messenger for PhoneSwitcherNetworkRequstListener
+01-01 00:00:26.533   448   497 D ConnectivityService: Got NetworkFactory Messenger for TelephonyNetworkFactory[0]
+01-01 00:00:26.572   448   468 D BluetoothManagerService: Message: 20
+01-01 00:00:26.573   448   468 D BluetoothManagerService: Added callback: android.bluetooth.IBluetoothManagerCallback$Stub$Proxy@dcfefc1:true
+01-01 00:00:26.575   448   468 D BluetoothManagerService: Message: 30
+01-01 00:00:26.575   448   619 D BluetoothManagerService: Trying to bind to profile: 1, while Bluetooth was disabled
+01-01 00:00:26.581   589   728 E ActivityThread: Failed to find provider info for com.android.contacts
+01-01 00:00:26.731   448   618 W Telecom : : registerPhoneAccount not allowed on non-voice capable device.: TSI.rPA@AAM
+01-01 00:00:26.784   448   460 W Telecom : : registerPhoneAccount not allowed on non-voice capable device.: TSI.rPA@AAY
+01-01 00:00:26.802   448   469 W WindowManager: App freeze timeout expired.
+01-01 00:00:26.932   448   619 I StatusBarManagerService: registerStatusBar bar=com.android.internal.statusbar.IStatusBar$Stub$Proxy@fa4b14c
+01-01 00:00:27.059   448   463 W WindowManager: Keyguard drawn timeout. Setting mKeyguardDrawComplete
+01-01 00:00:27.077   448   469 I SystemServiceManager: Starting phase 1000
+01-01 00:00:27.096   448   469 I ActivityManager: Start proc 748:android.ext.services/u0a12 for on-hold
+01-01 00:00:27.104   448   469 D ActivityManager: Finishing user boot 0
+01-01 00:00:27.106   448   469 D CryptdConnector: SND -> {3 cryptfs prepare_user_storage ! 0 0 2}
+01-01 00:00:27.107   119   132 D vold    : e4crypt_prepare_user_storage for volume null, user 0, serial 0, flags 2
+01-01 00:00:27.107   119   132 D vold    : Preparing: /data/system_ce/0
+01-01 00:00:27.107   119   132 D vold    : Preparing: /data/misc_ce/0
+01-01 00:00:27.107   119   132 D vold    : Preparing: /data/media/0
+01-01 00:00:27.107   119   132 D vold    : Preparing: /data/data
+01-01 00:00:27.108   448   487 D CryptdConnector: RCV <- {200 3 Command succeeded}
+01-01 00:00:27.109   448   469 V UserManagerService: Found /data/user/0 with serial number 0
+01-01 00:00:27.109   448   469 V UserManagerService: Found /data/system_ce/0 with serial number 0
+01-01 00:00:27.110   448   469 V PackageManager: reconcileAppsData for null u0 0x2
+01-01 00:00:27.592   448   469 V PackageManager: reconcileAppsData finished 104 packages
+01-01 00:00:27.593   448   462 D BluetoothManagerService: User 0 unlocked
+01-01 00:00:27.594   448   462 D MountService: onUnlockUser 0
+01-01 00:00:27.594   448   462 D VoldConnector: SND -> {6 volume user_started 0}
+01-01 00:00:27.595   448   468 D BluetoothManagerService: Message: 301
+01-01 00:00:27.595   448   468 D BluetoothManagerService: MESSAGE_USER_UNLOCKED
+01-01 00:00:27.597   448   497 D ConnectivityService: Got NetworkFactory Messenger for WIFI
+01-01 00:00:27.597   448   497 D ConnectivityService: Got NetworkFactory Messenger for WIFI_UT
+01-01 00:00:27.598   119   131 D vold    : Linking /storage/emulated/0 to /mnt/user/0/primary
+01-01 00:00:27.598   448   486 D VoldConnector: RCV <- {200 6 Command succeeded}
+01-01 00:00:27.610   448   485 D MountService: Volume emulated broadcasting mounted to UserHandle{0}
+01-01 00:00:27.618   448   448 I ActivityManager: Start proc 793:com.android.deskclock/u0a39 for broadcast com.android.deskclock/.AlarmInitReceiver
+01-01 00:00:27.685   448   462 V BackupManagerService: No ancestral data
+01-01 00:00:27.714   448   462 V BackupManagerService: Starting with transport com.google.android.gms/.backup.BackupTransportService
+01-01 00:00:27.714   448   462 V BackupManagerService: Found transports: 2
+01-01 00:00:27.739   448   462 I ActivityManager: Start proc 812:com.google.android.gms.persistent/u0a62 for service com.google.android.gms/.backup.BackupTransportService
+01-01 00:00:27.741   448   462 I BackupManagerService: Backup enabled => false
+01-01 00:00:27.746   448   448 V BackupManagerService: Connected to transport ComponentInfo{android/com.android.internal.backup.LocalTransportService}
+01-01 00:00:27.746   448   448 V BackupManagerService: Registering transport android/com.android.internal.backup.LocalTransportService::android/com.android.internal.backup.LocalTransport = android.app.backup.BackupTransport$Tr
+ansportImpl@1faae12
+01-01 00:00:27.777   448   802 V KeyValueBackupJob: Scheduling k/v pass in 247 minutes
+01-01 00:00:27.894   448   462 W VoiceInteractionManagerService: no available voice interaction services found for user 0
+01-01 00:00:27.895   448   462 W VoiceInteractionManagerService: no available voice recognition services found for user 0
+01-01 00:00:27.897   448   462 I ActivityManager: Loading recents for user 0 into memory.
+01-01 00:00:27.912   448   462 D ActivityManager: Sending BOOT_COMPLETE user #0
+01-01 00:00:27.961   448   460 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.android.launcher3/.Launcher} from uid 0 on display 0
+01-01 00:00:28.072   448   460 W ActivityManager: Slow operation: 55ms so far, now at startProcess: returned from zygote!
+01-01 00:00:28.073   448   460 W ActivityManager: Slow operation: 56ms so far, now at startProcess: done updating battery stats
+01-01 00:00:28.073   448   460 W ActivityManager: Slow operation: 56ms so far, now at startProcess: building log message
+01-01 00:00:28.073   448   460 I ActivityManager: Start proc 857:com.android.launcher3/u0a47 for activity com.android.launcher3/.Launcher
+01-01 00:00:28.073   448   460 W ActivityManager: Slow operation: 56ms so far, now at startProcess: starting to update pids map
+01-01 00:00:28.073   448   460 W ActivityManager: Slow operation: 56ms so far, now at startProcess: done updating pids map
+01-01 00:00:28.073   448   460 W ActivityManager: Slow operation: 57ms so far, now at startProcess: done starting proc!
+01-01 00:00:28.145   448   619 W ActivityManager: Slow operation: 66ms so far, now at startProcess: returned from zygote!
+01-01 00:00:28.145   448   619 W ActivityManager: Slow operation: 67ms so far, now at startProcess: done updating battery stats
+01-01 00:00:28.146   448   619 W ActivityManager: Slow operation: 68ms so far, now at startProcess: building log message
+01-01 00:00:28.146   448   619 I ActivityManager: Start proc 868:com.android.smspush/u0a59 for service com.android.smspush/.WapPushManager
+01-01 00:00:28.146   448   619 W ActivityManager: Slow operation: 68ms so far, now at startProcess: starting to update pids map
+01-01 00:00:28.146   448   619 W ActivityManager: Slow operation: 68ms so far, now at startProcess: done updating pids map
+01-01 00:00:28.146   448   619 W ActivityManager: Slow operation: 68ms so far, now at startProcess: done starting proc!
+01-01 00:00:28.304   448   648 W ActivityManager: Slow operation: 51ms so far, now at startProcess: returned from zygote!
+01-01 00:00:28.312   448   648 W ActivityManager: Slow operation: 60ms so far, now at startProcess: done updating battery stats
+01-01 00:00:28.312   448   648 W ActivityManager: Slow operation: 60ms so far, now at startProcess: building log message
+01-01 00:00:28.312   448   648 I ActivityManager: Start proc 885:com.android.keychain/1000 for service com.android.keychain/.KeyChainService
+01-01 00:00:28.312   448   648 W ActivityManager: Slow operation: 60ms so far, now at startProcess: starting to update pids map
+
+```
+
