@@ -419,3 +419,217 @@ ansportImpl@1faae12
 
 ```
 
+Logcat filter on glonass:
+
+```
+08-09 08:09:18.251   446   580 D gps_glonass_serial: $GPGSV: sat nr 0, elevation: 0, azimuth: 0, snr: 0 dbm
+08-09 08:09:18.271   446   580 D gps_glonass_serial: Received: $GPGLL,,,,,,V,N*64
+08-09 08:09:18.272   446   580 D gps_glonass_serial: $xxxxx sentence is not parsed
+08-09 08:09:19.120   446   580 D gps_glonass_serial: Received: $GPRMC,,V,,,,,,,,,,N*53
+08-09 08:09:19.120   446   580 D gps_glonass_serial: $xxRMC: raw coordinates and speed: (0/0,0/0) 0/0
+08-09 08:09:19.120   446   580 D gps_glonass_serial: $xxRMC fixed-point coordinates and speed scaled to three decimal places: (0,0) 0
+08-09 08:09:19.120   446   580 D gps_glonass_serial: $xxRMC floating point degree coordinates and speed: (nan,nan) nan
+08-09 08:09:19.120   446   580 D gps_glonass_serial: hours: -1
+08-09 08:09:19.120   446   580 D gps_glonass_serial: minutes: -1
+08-09 08:09:19.120   446   580 D gps_glonass_serial: seconds: -1
+08-09 08:09:19.120   446   580 D gps_glonass_serial: year: -1
+08-09 08:09:19.120   446   580 D gps_glonass_serial: month: -1
+08-09 08:09:19.120   446   580 D gps_glonass_serial: day: -1
+08-09 08:09:19.142   446   580 D gps_glonass_serial: Received: $GPVTG,,,,,,,,,N*30
+08-09 08:09:19.142   446   580 D gps_glonass_serial: $xxVTG sentence is not parsed
+08-09 08:09:19.176   446   580 D gps_glonass_serial: Received: $GPGGA,,,,,,0,00,99.99,,,,,,*48
+08-09 08:09:19.176   446   580 D gps_glonass_serial: $xxGGA: fix quality: 0
+08-09 08:09:19.176   446   580 D gps_glonass_serial: $xxGGA: latitude: nan
+08-09 08:09:19.176   446   580 D gps_glonass_serial: $xxGGA: longitude: nan
+08-09 08:09:19.176   446   580 D gps_glonass_serial: $xxGGA: fix quality: 0
+08-09 08:09:19.176   446   580 D gps_glonass_serial: $xxGGA: satellites tracked: 0
+08-09 08:09:19.176   446   580 D gps_glonass_serial: $xxGGA: hdop: 99.989998
+08-09 08:09:19.176   446   580 D gps_glonass_serial: $xxGGA: altitude: nan
+08-09 08:09:19.176   446   580 D gps_glonass_serial: $xxGGA: height: nan
+08-09 08:09:19.223   446   580 D gps_glonass_serial: Received: $GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+08-09 08:09:19.223   446   580 D gps_glonass_serial: $GPGSA: mode: A
+08-09 08:09:19.223   446   580 D gps_glonass_serial: $GPGSA: fix type: 1
+08-09 08:09:19.223   446   580 D gps_glonass_serial: $GPGSA: pdop: 99.989998
+08-09 08:09:19.223   446   580 D gps_glonass_serial: $GPGSA: hdop: 99.989998
+08-09 08:09:19.223   446   580 D gps_glonass_serial: $GPGSA: vdop: 99.989998
+08-09 08:09:19.258   446   580 D gps_glonass_serial: Received: $GPGSV,1,1,02,24,,,09,25,,,20*71
+08-09 08:09:19.258   446   580 D gps_glonass_serial: $GPGSV: message 1 of 1
+08-09 08:09:19.258   446   580 D gps_glonass_serial: $GPGSV: sattelites in view: 2
+08-09 08:09:19.259   446   580 D gps_glonass_serial: $GPGSV: sat nr 24, elevation: 0, azimuth: 0, snr: 9 dbm
+08-09 08:09:19.259   446   580 D gps_glonass_serial: $GPGSV: sat nr 25, elevation: 0, azimuth: 0, snr: 20 dbm
+08-09 08:09:19.259   446   580 D gps_glonass_serial: $GPGSV: sat nr 0, elevation: 0, azimuth: 0, snr: 0 dbm
+08-09 08:09:19.259   446   580 D gps_glonass_serial: $GPGSV: sat nr 0, elevation: 0, azimuth: 0, snr: 0 dbm
+08-09 08:09:19.279   446   580 D gps_glonass_serial: Received: $GPGLL,,,,,,V,N*64
+08-09 08:09:19.279   446   580 D gps_glonass_serial: $xxxxx sentence is not parsed
+08-09 08:09:20.120   446   580 D gps_glonass_serial: Received: $GPRMC,,V,,,,,,,,,,N*53
+08-09 08:09:20.120   446   580 D gps_glonass_serial: $xxRMC: raw coordinates and speed: (0/0,0/0) 0/0
+08-09 08:09:20.120   446   580 D gps_glonass_serial: $xxRMC fixed-point coordinates and speed scaled to three decimal places: (0,0) 0
+08-09 08:09:20.120   446   580 D gps_glonass_serial: $xxRMC floating point degree coordinates and speed: (nan,nan) nan
+08-09 08:09:20.120   446   580 D gps_glonass_serial: hours: -1
+08-09 08:09:20.120   446   580 D gps_glonass_serial: minutes: -1
+08-09 08:09:20.120   446   580 D gps_glonass_serial: seconds: -1
+08-09 08:09:20.120   446   580 D gps_glonass_serial: year: -1
+08-09 08:09:20.120   446   580 D gps_glonass_serial: month: -1
+08-09 08:09:20.120   446   580 D gps_glonass_serial: day: -1
+08-09 08:09:20.141   446   580 D gps_glonass_serial: Received: $GPVTG,,,,,,,,,N*30
+08-09 08:09:20.142   446   580 D gps_glonass_serial: $xxVTG sentence is not parsed
+08-09 08:09:20.176   446   580 D gps_glonass_serial: Received: $GPGGA,,,,,,0,00,99.99,,,,,,*48
+08-09 08:09:20.176   446   580 D gps_glonass_serial: $xxGGA: fix quality: 0
+08-09 08:09:20.176   446   580 D gps_glonass_serial: $xxGGA: latitude: nan
+08-09 08:09:20.176   446   580 D gps_glonass_serial: $xxGGA: longitude: nan
+08-09 08:09:20.176   446   580 D gps_glonass_serial: $xxGGA: fix quality: 0
+08-09 08:09:20.176   446   580 D gps_glonass_serial: $xxGGA: satellites tracked: 0
+08-09 08:09:20.176   446   580 D gps_glonass_serial: $xxGGA: hdop: 99.989998
+08-09 08:09:20.176   446   580 D gps_glonass_serial: $xxGGA: altitude: nan
+08-09 08:09:20.176   446   580 D gps_glonass_serial: $xxGGA: height: nan
+08-09 08:09:20.223   446   580 D gps_glonass_serial: Received: $GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+08-09 08:09:20.223   446   580 D gps_glonass_serial: $GPGSA: mode: A
+08-09 08:09:20.223   446   580 D gps_glonass_serial: $GPGSA: fix type: 1
+08-09 08:09:20.223   446   580 D gps_glonass_serial: $GPGSA: pdop: 99.989998
+08-09 08:09:20.223   446   580 D gps_glonass_serial: $GPGSA: hdop: 99.989998
+08-09 08:09:20.223   446   580 D gps_glonass_serial: $GPGSA: vdop: 99.989998
+08-09 08:09:20.250   446   580 D gps_glonass_serial: Received: $GPGSV,1,1,01,24,,,08*76
+08-09 08:09:20.250   446   580 D gps_glonass_serial: $GPGSV: message 1 of 1
+08-09 08:09:20.250   446   580 D gps_glonass_serial: $GPGSV: sattelites in view: 1
+08-09 08:09:20.250   446   580 D gps_glonass_serial: $GPGSV: sat nr 24, elevation: 0, azimuth: 0, snr: 8 dbm
+08-09 08:09:20.250   446   580 D gps_glonass_serial: $GPGSV: sat nr 0, elevation: 0, azimuth: 0, snr: 0 dbm
+08-09 08:09:20.250   446   580 D gps_glonass_serial: $GPGSV: sat nr 0, elevation: 0, azimuth: 0, snr: 0 dbm
+08-09 08:09:20.250   446   580 D gps_glonass_serial: $GPGSV: sat nr 0, elevation: 0, azimuth: 0, snr: 0 dbm
+08-09 08:09:20.270   446   580 D gps_glonass_serial: Received: $GPGLL,,,,,,V,N*64
+08-09 08:09:20.270   446   580 D gps_glonass_serial: $xxxxx sentence is not parsed
+08-09 08:09:21.120   446   580 D gps_glonass_serial: Received: $GPRMC,,V,,,,,,,,,,N*53
+08-09 08:09:21.120   446   580 D gps_glonass_serial: $xxRMC: raw coordinates and speed: (0/0,0/0) 0/0
+08-09 08:09:21.120   446   580 D gps_glonass_serial: $xxRMC fixed-point coordinates and speed scaled to three decimal places: (0,0) 0
+08-09 08:09:21.120   446   580 D gps_glonass_serial: $xxRMC floating point degree coordinates and speed: (nan,nan) nan
+08-09 08:09:21.120   446   580 D gps_glonass_serial: hours: -1
+08-09 08:09:21.120   446   580 D gps_glonass_serial: minutes: -1
+08-09 08:09:21.120   446   580 D gps_glonass_serial: seconds: -1
+08-09 08:09:21.120   446   580 D gps_glonass_serial: year: -1
+08-09 08:09:21.120   446   580 D gps_glonass_serial: month: -1
+08-09 08:09:21.120   446   580 D gps_glonass_serial: day: -1
+08-09 08:09:21.142   446   580 D gps_glonass_serial: Received: $GPVTG,,,,,,,,,N*30
+08-09 08:09:21.142   446   580 D gps_glonass_serial: $xxVTG sentence is not parsed
+08-09 08:09:21.176   446   580 D gps_glonass_serial: Received: $GPGGA,,,,,,0,00,99.99,,,,,,*48
+08-09 08:09:21.176   446   580 D gps_glonass_serial: $xxGGA: fix quality: 0
+08-09 08:09:21.176   446   580 D gps_glonass_serial: $xxGGA: latitude: nan
+08-09 08:09:21.176   446   580 D gps_glonass_serial: $xxGGA: longitude: nan
+08-09 08:09:21.176   446   580 D gps_glonass_serial: $xxGGA: fix quality: 0
+08-09 08:09:21.176   446   580 D gps_glonass_serial: $xxGGA: satellites tracked: 0
+08-09 08:09:21.176   446   580 D gps_glonass_serial: $xxGGA: hdop: 99.989998
+08-09 08:09:21.176   446   580 D gps_glonass_serial: $xxGGA: altitude: nan
+08-09 08:09:21.176   446   580 D gps_glonass_serial: $xxGGA: height: nan
+08-09 08:09:21.223   446   580 D gps_glonass_serial: Received: $GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+08-09 08:09:21.223   446   580 D gps_glonass_serial: $GPGSA: mode: A
+08-09 08:09:21.223   446   580 D gps_glonass_serial: $GPGSA: fix type: 1
+08-09 08:09:21.223   446   580 D gps_glonass_serial: $GPGSA: pdop: 99.989998
+08-09 08:09:21.223   446   580 D gps_glonass_serial: $GPGSA: hdop: 99.989998
+08-09 08:09:21.223   446   580 D gps_glonass_serial: $GPGSA: vdop: 99.989998
+08-09 08:09:21.250   446   580 D gps_glonass_serial: Received: $GPGSV,1,1,01,24,,,09*77
+08-09 08:09:21.250   446   580 D gps_glonass_serial: $GPGSV: message 1 of 1
+08-09 08:09:21.250   446   580 D gps_glonass_serial: $GPGSV: sattelites in view: 1
+08-09 08:09:21.250   446   580 D gps_glonass_serial: $GPGSV: sat nr 24, elevation: 0, azimuth: 0, snr: 9 dbm
+08-09 08:09:21.250   446   580 D gps_glonass_serial: $GPGSV: sat nr 0, elevation: 0, azimuth: 0, snr: 0 dbm
+08-09 08:09:21.250   446   580 D gps_glonass_serial: $GPGSV: sat nr 0, elevation: 0, azimuth: 0, snr: 0 dbm
+08-09 08:09:21.250   446   580 D gps_glonass_serial: $GPGSV: sat nr 0, elevation: 0, azimuth: 0, snr: 0 dbm
+08-09 08:09:21.271   446   580 D gps_glonass_serial: Received: $GPGLL,,,,,,V,N*64
+08-09 08:09:21.271   446   580 D gps_glonass_serial: $xxxxx sentence is not parsed
+08-09 08:09:22.121   446   580 D gps_glonass_serial: Received: $GPRMC,,V,,,,,,,,,,N*53
+08-09 08:09:22.121   446   580 D gps_glonass_serial: $xxRMC: raw coordinates and speed: (0/0,0/0) 0/0
+08-09 08:09:22.121   446   580 D gps_glonass_serial: $xxRMC fixed-point coordinates and speed scaled to three decimal places: (0,0) 0
+08-09 08:09:22.121   446   580 D gps_glonass_serial: $xxRMC floating point degree coordinates and speed: (nan,nan) nan
+08-09 08:09:22.121   446   580 D gps_glonass_serial: hours: -1
+08-09 08:09:22.121   446   580 D gps_glonass_serial: minutes: -1
+08-09 08:09:22.121   446   580 D gps_glonass_serial: seconds: -1
+08-09 08:09:22.121   446   580 D gps_glonass_serial: year: -1
+08-09 08:09:22.121   446   580 D gps_glonass_serial: month: -1
+08-09 08:09:22.121   446   580 D gps_glonass_serial: day: -1
+08-09 08:09:22.143   446   580 D gps_glonass_serial: Received: $GPVTG,,,,,,,,,N*30
+08-09 08:09:22.143   446   580 D gps_glonass_serial: $xxVTG sentence is not parsed
+08-09 08:09:22.177   446   580 D gps_glonass_serial: Received: $GPGGA,,,,,,0,00,99.99,,,,,,*48
+08-09 08:09:22.177   446   580 D gps_glonass_serial: $xxGGA: fix quality: 0
+08-09 08:09:22.177   446   580 D gps_glonass_serial: $xxGGA: latitude: nan
+08-09 08:09:22.177   446   580 D gps_glonass_serial: $xxGGA: longitude: nan
+08-09 08:09:22.177   446   580 D gps_glonass_serial: $xxGGA: fix quality: 0
+08-09 08:09:22.177   446   580 D gps_glonass_serial: $xxGGA: satellites tracked: 0
+08-09 08:09:22.177   446   580 D gps_glonass_serial: $xxGGA: hdop: 99.989998
+08-09 08:09:22.177   446   580 D gps_glonass_serial: $xxGGA: altitude: nan
+08-09 08:09:22.177   446   580 D gps_glonass_serial: $xxGGA: height: nan
+08-09 08:09:22.224   446   580 D gps_glonass_serial: Received: $GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+08-09 08:09:22.224   446   580 D gps_glonass_serial: $GPGSA: mode: A
+08-09 08:09:22.224   446   580 D gps_glonass_serial: $GPGSA: fix type: 1
+08-09 08:09:22.224   446   580 D gps_glonass_serial: $GPGSA: pdop: 99.989998
+08-09 08:09:22.224   446   580 D gps_glonass_serial: $GPGSA: hdop: 99.989998
+08-09 08:09:22.224   446   580 D gps_glonass_serial: $GPGSA: vdop: 99.989998
+08-09 08:09:22.251   446   580 D gps_glonass_serial: Received: $GPGSV,1,1,01,24,,,11*7E
+08-09 08:09:22.251   446   580 D gps_glonass_serial: $GPGSV: message 1 of 1
+08-09 08:09:22.251   446   580 D gps_glonass_serial: $GPGSV: sattelites in view: 1
+08-09 08:09:22.251   446   580 D gps_glonass_serial: $GPGSV: sat nr 24, elevation: 0, azimuth: 0, snr: 11 dbm
+08-09 08:09:22.251   446   580 D gps_glonass_serial: $GPGSV: sat nr 0, elevation: 0, azimuth: 0, snr: 0 dbm
+08-09 08:09:22.251   446   580 D gps_glonass_serial: $GPGSV: sat nr 0, elevation: 0, azimuth: 0, snr: 0 dbm
+08-09 08:09:22.251   446   580 D gps_glonass_serial: $GPGSV: sat nr 0, elevation: 0, azimuth: 0, snr: 0 dbm
+08-09 08:09:22.272   446   580 D gps_glonass_serial: Received: $GPGLL,,,,,,V,N*64
+08-09 08:09:22.272   446   580 D gps_glonass_serial: $xxxxx sentence is not parsed
+08-09 08:09:23.121   446   580 D gps_glonass_serial: Received: $GPRMC,,V,,,,,,,,,,N*53
+08-09 08:09:23.121   446   580 D gps_glonass_serial: $xxRMC: raw coordinates and speed: (0/0,0/0) 0/0
+08-09 08:09:23.121   446   580 D gps_glonass_serial: $xxRMC fixed-point coordinates and speed scaled to three decimal places: (0,0) 0
+08-09 08:09:23.121   446   580 D gps_glonass_serial: $xxRMC floating point degree coordinates and speed: (nan,nan) nan
+08-09 08:09:23.121   446   580 D gps_glonass_serial: hours: -1
+08-09 08:09:23.121   446   580 D gps_glonass_serial: minutes: -1
+08-09 08:09:23.121   446   580 D gps_glonass_serial: seconds: -1
+08-09 08:09:23.121   446   580 D gps_glonass_serial: year: -1
+08-09 08:09:23.122   446   580 D gps_glonass_serial: month: -1
+08-09 08:09:23.122   446   580 D gps_glonass_serial: day: -1
+08-09 08:09:23.143   446   580 D gps_glonass_serial: Received: $GPVTG,,,,,,,,,N*30
+08-09 08:09:23.143   446   580 D gps_glonass_serial: $xxVTG sentence is not parsed
+08-09 08:09:23.177   446   580 D gps_glonass_serial: Received: $GPGGA,,,,,,0,00,99.99,,,,,,*48
+08-09 08:09:23.177   446   580 D gps_glonass_serial: $xxGGA: fix quality: 0
+08-09 08:09:23.177   446   580 D gps_glonass_serial: $xxGGA: latitude: nan
+08-09 08:09:23.178   446   580 D gps_glonass_serial: $xxGGA: longitude: nan
+08-09 08:09:23.178   446   580 D gps_glonass_serial: $xxGGA: fix quality: 0
+08-09 08:09:23.178   446   580 D gps_glonass_serial: $xxGGA: satellites tracked: 0
+08-09 08:09:23.178   446   580 D gps_glonass_serial: $xxGGA: hdop: 99.989998
+08-09 08:09:23.178   446   580 D gps_glonass_serial: $xxGGA: altitude: nan
+08-09 08:09:23.178   446   580 D gps_glonass_serial: $xxGGA: height: nan
+08-09 08:09:23.224   446   580 D gps_glonass_serial: Received: $GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+08-09 08:09:23.224   446   580 D gps_glonass_serial: $GPGSA: mode: A
+08-09 08:09:23.224   446   580 D gps_glonass_serial: $GPGSA: fix type: 1
+08-09 08:09:23.224   446   580 D gps_glonass_serial: $GPGSA: pdop: 99.989998
+08-09 08:09:23.224   446   580 D gps_glonass_serial: $GPGSA: hdop: 99.989998
+08-09 08:09:23.224   446   580 D gps_glonass_serial: $GPGSA: vdop: 99.989998
+08-09 08:09:23.243   446   580 D gps_glonass_serial: Received: $GPGSV,1,1,00*79
+08-09 08:09:23.243   446   580 D gps_glonass_serial: $GPGSV: message 1 of 1
+08-09 08:09:23.243   446   580 D gps_glonass_serial: $GPGSV: sattelites in view: 0
+08-09 08:09:23.243   446   580 D gps_glonass_serial: $GPGSV: sat nr 0, elevation: 0, azimuth: 0, snr: 0 dbm
+08-09 08:09:23.243   446   580 D gps_glonass_serial: $GPGSV: sat nr 0, elevation: 0, azimuth: 0, snr: 0 dbm
+08-09 08:09:23.243   446   580 D gps_glonass_serial: $GPGSV: sat nr 0, elevation: 0, azimuth: 0, snr: 0 dbm
+08-09 08:09:23.243   446   580 D gps_glonass_serial: $GPGSV: sat nr 0, elevation: 0, azimuth: 0, snr: 0 dbm
+08-09 08:09:23.264   446   580 D gps_glonass_serial: Received: $GPGLL,,,,,,V,N*64
+08-09 08:09:23.264   446   580 D gps_glonass_serial: $xxxxx sentence is not parsed
+08-09 08:09:24.120   446   580 D gps_glonass_serial: Received: $GPRMC,,V,,,,,,,,,,N*53
+08-09 08:09:24.120   446   580 D gps_glonass_serial: $xxRMC: raw coordinates and speed: (0/0,0/0) 0/0
+08-09 08:09:24.120   446   580 D gps_glonass_serial: $xxRMC fixed-point coordinates and speed scaled to three decimal places: (0,0) 0
+08-09 08:09:24.121   446   580 D gps_glonass_serial: $xxRMC floating point degree coordinates and speed: (nan,nan) nan
+08-09 08:09:24.121   446   580 D gps_glonass_serial: hours: -1
+08-09 08:09:24.121   446   580 D gps_glonass_serial: minutes: -1
+08-09 08:09:24.121   446   580 D gps_glonass_serial: seconds: -1
+08-09 08:09:24.121   446   580 D gps_glonass_serial: year: -1
+08-09 08:09:24.121   446   580 D gps_glonass_serial: month: -1
+08-09 08:09:24.121   446   580 D gps_glonass_serial: day: -1
+08-09 08:09:24.142   446   580 D gps_glonass_serial: Received: $GPVTG,,,,,,,,,N*30
+08-09 08:09:24.142   446   580 D gps_glonass_serial: $xxVTG sentence is not parsed
+08-09 08:09:24.177   446   580 D gps_glonass_serial: Received: $GPGGA,,,,,,0,00,99.99,,,,,,*48
+08-09 08:09:24.177   446   580 D gps_glonass_serial: $xxGGA: fix quality: 0
+08-09 08:09:24.177   446   580 D gps_glonass_serial: $xxGGA: latitude: nan
+08-09 08:09:24.177   446   580 D gps_glonass_serial: $xxGGA: longitude: nan
+08-09 08:09:24.177   446   580 D gps_glonass_serial: $xxGGA: fix quality: 0
+08-09 08:09:24.177   446   580 D gps_glonass_serial: $xxGGA: satellites tracked: 0
+08-09 08:09:24.177   446   580 D gps_glonass_serial: $xxGGA: hdop: 99.989998
+08-09 08:09:24.177   446   580 D gps_glonass_serial: $xxGGA: altitude: nan
+08-09 08:09:24.177   446   580 D gps_glonass_serial: $xxGGA: height: nan
+08-09 08:09:24.223   446   580 D gps_glonass_serial: Received: $GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+08-09 08:09:24.223   446   580 D gps_glonass_serial: $GPGSA: mode: A
+08-09 08:09:24.223   446   580 D gps_glonass_serial: $GPGSA: fix type: 1
+08-09 08:09:24.223   446   580 D gps_glonass_serial: $GPGSA: pdop: 99.989998
+08-09 08:09:24.223   446   580 D gps_glonass_serial: $GPGSA: hdop: 99.989998
+08-09 08:09:24.223   446   580 D gps_glonass_serial: $GPGSA: vdop: 99.989998
+```
